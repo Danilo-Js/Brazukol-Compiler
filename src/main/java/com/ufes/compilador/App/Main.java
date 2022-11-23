@@ -1,6 +1,5 @@
 package com.ufes.compilador.App;
 import com.ufes.compilador.Presenter.MainPresenter;
-import com.ufes.compilador.Presenter.ResultPresenter;
 
 /**
  *

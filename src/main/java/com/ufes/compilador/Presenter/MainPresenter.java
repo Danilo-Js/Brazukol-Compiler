@@ -1,6 +1,5 @@
 package com.ufes.compilador.Presenter;
 
-import com.*;
 import com.ufes.compilador.View.MainView;
 
 /**
@@ -17,6 +16,8 @@ public class MainPresenter {
         this.view.getCompileButton().addActionListener((e) -> {
            new ResultPresenter();
         });
+
+        this.view.setVisible(true);
     }
     
     private void setIcons() {
