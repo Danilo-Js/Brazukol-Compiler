@@ -11,7 +11,7 @@ public class MainPresenter {
 
     public MainPresenter() {
         this.view = new MainView(); // instanciando a tela principal
-        this.setIcons();
+        this.setIcons(); 
         
         this.view.getCompileButton().addActionListener((e) -> {
            new ResultPresenter();

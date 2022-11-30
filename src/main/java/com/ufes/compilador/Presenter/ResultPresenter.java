@@ -1,6 +1,5 @@
 package com.ufes.compilador.Presenter;
 
-import com.ufes.compilador.Model.ResultCollection;
 import com.ufes.compilador.View.ResultView;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
