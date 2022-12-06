@@ -1,5 +1,6 @@
 package com.ufes.compilador.Presenter;
 
+import com.ufes.compilador.JFlex.YylexTest;
 import com.ufes.compilador.View.MainView;
 
 /**
@@ -14,7 +15,8 @@ public class MainPresenter {
         this.setIcons(); 
         
         this.view.getCompileButton().addActionListener((e) -> {
-           new ResultPresenter();
+            new YylexTest();
+            new ResultPresenter();
         });
 
         this.view.setVisible(true);

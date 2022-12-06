@@ -1,3 +1,5 @@
+package com.ufes.compilador.JFlex;
+
 /** The tokens returned by the scanner. */
 class Yytoken {
   public int m_index;
@@ -16,6 +18,7 @@ class Yytoken {
     m_line = line;
     m_charBegin = charBegin;
     m_charEnd = charEnd;
+    System.out.println("\n-- TOKEN --\n" + this.toString() + "\n" + "\n-- FIM TOKEN --\n");
   }
 
   @Override
