@@ -1,43 +1,14 @@
 package com.ufes.compilador.JFlex;
 
-/** The tokens returned by the scanner. */
-class Yyerror {
-  public int m_index;
-  public String m_text;
-  public int m_line;
-  public long m_charBegin;
-  public long m_charEnd;
-
-  Yyerror(int index, String text, int line, long charBegin, long charEnd) {
-    checkArgument("index", index >= 0);
-    checkArgument("line", line >= 0);
-    checkArgument("charBegin", charBegin >= 0);
-    checkArgument("charEnd", charEnd > 0);
-    m_index = index;
-    m_text = text;
-    m_line = line;
-    m_charBegin = charBegin;
-    m_charEnd = charEnd;
-    System.out.println("\n-- TOKEN --\n" + this.toString() + "\n" + "\n-- FIM TOKEN --\n");
+public class Yyerror {
+  public Yyerror(int line, String description) {
+    this.printError(line, description);
   }
-
-  @Override
-  public String toString() {
-    return "Text   : "
-        + m_text
-        + "\nindex : "
-        + m_index
-        + "\nline  : "
-        + m_line
-        + "\ncBeg. : "
-        + m_charBegin
-        + "\ncEnd. : "
-        + m_charEnd;
-  }
-
-  private static void checkArgument(String argName, boolean expectation) {
-    if (!expectation) {
-      throw new IllegalArgumentException(argName);
-    }
+  
+  public void printError(int line, String description) {
+    System.out.println("\n-- PRINT ERRO --\n");
+    System.out.println("Linha: " + line + "\n");   
+    System.out.println("Erro: " + description + "\n");
+    System.out.println("-- FIM PRINT ERRO --\n");
   }
 }

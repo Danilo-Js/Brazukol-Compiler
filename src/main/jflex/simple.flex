@@ -28,29 +28,29 @@ Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
 %%
 
 <YYINITIAL> {
-  "," { return (new Yytoken(0,yytext(),yyline,yychar,yychar+1)); }
-  ":" { return (new Yytoken(1,yytext(),yyline,yychar,yychar+1)); }
-  ";" { return (new Yytoken(2,yytext(),yyline,yychar,yychar+1)); }
-  "(" { return (new Yytoken(3,yytext(),yyline,yychar,yychar+1)); }
-  ")" { return (new Yytoken(4,yytext(),yyline,yychar,yychar+1)); }
-  "[" { return (new Yytoken(5,yytext(),yyline,yychar,yychar+1)); }
-  "]" { return (new Yytoken(6,yytext(),yyline,yychar,yychar+1)); }
-  "{" { return (new Yytoken(7,yytext(),yyline,yychar,yychar+1)); }
-  "}" { return (new Yytoken(8,yytext(),yyline,yychar,yychar+1)); }
-  "." { return (new Yytoken(9,yytext(),yyline,yychar,yychar+1)); }
-  "+" { return (new Yytoken(10,yytext(),yyline,yychar,yychar+1)); }
-  "-" { return (new Yytoken(11,yytext(),yyline,yychar,yychar+1)); }
-  "*" { return (new Yytoken(12,yytext(),yyline,yychar,yychar+1)); }
-  "/" { return (new Yytoken(13,yytext(),yyline,yychar,yychar+1)); }
-  "=" { return (new Yytoken(14,yytext(),yyline,yychar,yychar+1)); }
-  "<>" { return (new Yytoken(15,yytext(),yyline,yychar,yychar+2)); }
-  "<"  { return (new Yytoken(16,yytext(),yyline,yychar,yychar+1)); }
-  "<=" { return (new Yytoken(17,yytext(),yyline,yychar,yychar+2)); }
-  ">"  { return (new Yytoken(18,yytext(),yyline,yychar,yychar+1)); }
-  ">=" { return (new Yytoken(19,yytext(),yyline,yychar,yychar+2)); }
-  "&"  { return (new Yytoken(20,yytext(),yyline,yychar,yychar+1)); }
-  "|"  { return (new Yytoken(21,yytext(),yyline,yychar,yychar+1)); }
-  ":=" { return (new Yytoken(22,yytext(),yyline,yychar,yychar+2)); }
+  "," { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ":" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ";" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "(" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ")" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "[" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "]" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "{" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "}" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "." { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "+" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "-" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "*" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "/" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "<>" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "<"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "<=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ">"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ">=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "&"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "|"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  ":=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
 
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 
@@ -58,18 +58,18 @@ Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
 
   \"{STRING_TEXT}\" {
     String str =  yytext().substring(1,yylength()-1);
-    return (new Yytoken(40,str,yyline,yychar,yychar+yylength()));
+    return (new Yytoken(str,yyline,"TKN_tokenEscolhido"));
   }
 
   \"{STRING_TEXT} {
     String str =  yytext().substring(1,yytext().length());
     Utility.error(Utility.E_UNCLOSEDSTR);
-    return (new Yytoken(41,str,yyline,yychar,yychar + str.length()));
+    return (new Yytoken(str,yyline,"TKN_tokenEscolhido"));
   }
 
-  {DIGIT}+ { return (new Yytoken(42,yytext(),yyline,yychar,yychar+yylength())); }
+  {DIGIT}+ { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
 
-  {Ident} { return (new Yytoken(43,yytext(),yyline,yychar,yychar+yylength())); }
+  {Ident} { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
 }
 
 <COMMENT> {

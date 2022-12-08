@@ -1,43 +1,15 @@
 package com.ufes.compilador.JFlex;
 
-/** The tokens returned by the scanner. */
-class Yytoken {
-  public int m_index;
-  public String m_text;
-  public int m_line;
-  public long m_charBegin;
-  public long m_charEnd;
-
-  Yytoken(int index, String text, int line, long charBegin, long charEnd) {
-    checkArgument("index", index >= 0);
-    checkArgument("line", line >= 0);
-    checkArgument("charBegin", charBegin >= 0);
-    checkArgument("charEnd", charEnd > 0);
-    m_index = index;
-    m_text = text;
-    m_line = line;
-    m_charBegin = charBegin;
-    m_charEnd = charEnd;
-    System.out.println("\n-- TOKEN --\n" + this.toString() + "\n" + "\n-- FIM TOKEN --\n");
+public class Yytoken {
+  public Yytoken(String text, int line, String token) {
+    this.printToken(text, token, line);
   }
-
-  @Override
-  public String toString() {
-    return "Text   : "
-        + m_text
-        + "\nindex : "
-        + m_index
-        + "\nline  : "
-        + m_line
-        + "\ncBeg. : "
-        + m_charBegin
-        + "\ncEnd. : "
-        + m_charEnd;
-  }
-
-  private static void checkArgument(String argName, boolean expectation) {
-    if (!expectation) {
-      throw new IllegalArgumentException(argName);
-    }
+  
+  public void printToken(String text, String token, int line) {
+    System.out.println("\n-- PRINT TOKEN --\n");
+    System.out.println("Texto: " + text + "\n");
+    System.out.println("Token: " + token + "\n");
+    System.out.println("Linha: " + line + "\n");
+    System.out.println("-- FIM PRINT TOKEN --\n");
   }
 }

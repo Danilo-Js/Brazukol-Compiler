@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 /** A small utility class. */
-class Utility {
+public class Utility {
 
   private Utility() {}
 
