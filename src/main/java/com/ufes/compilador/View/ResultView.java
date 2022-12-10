@@ -1,13 +1,74 @@
 package com.ufes.compilador.View;
 
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
+
 /**
  *
  * @author Danilo-Js
  */
 public class ResultView extends javax.swing.JFrame {
 
+    private DefaultTableModel tokensTableModel = new javax.swing.table.DefaultTableModel(
+        new Object [][] {
+
+        },
+        new String [] {
+            "Linha", "Token", "Texto"
+        }
+    );
+    private DefaultTableModel errorsTableModel = new javax.swing.table.DefaultTableModel(
+        new Object [][] {
+
+        },
+        new String [] {
+            "Linha", "Erro"
+        }
+    );
+    
     public ResultView() {
         initComponents();
+        this.mudaEstiloTabelaTokens();        
+        this.mudaEstiloTabelaErrors();
+    }
+    
+    private void mudaEstiloTabelaTokens() {
+        // cor do cabeçalho
+        JTableHeader header = this.getTabelaTokens().getTableHeader();
+        header.setBackground(Color.black);
+        header.setForeground(Color.white);
+        
+        // alinhamento do cabeçalho
+        ((DefaultTableCellRenderer)this.getTabelaTokens().getTableHeader()
+                .getDefaultRenderer()).setHorizontalAlignment(JLabel.LEFT);
+        
+        // alinhando as células
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(JLabel.LEFT);
+        this.getTabelaTokens().getColumnModel().getColumn(0).setCellRenderer(leftRenderer);
+        this.getTabelaTokens().getColumnModel().getColumn(1).setCellRenderer(leftRenderer);
+        this.getTabelaTokens().getColumnModel().getColumn(2).setCellRenderer(leftRenderer);
+    }
+    
+    private void mudaEstiloTabelaErrors() {
+        // cor do cabeçalho
+        JTableHeader header = this.getTabelaErrors().getTableHeader();
+        header.setBackground(Color.black);
+        header.setForeground(Color.white);
+        
+        // alinhamento do cabeçalho
+        ((DefaultTableCellRenderer)this.getTabelaTokens().getTableHeader()
+                .getDefaultRenderer()).setHorizontalAlignment(JLabel.LEFT);
+        
+        // alinhando as células
+        DefaultTableCellRenderer leftRenderer = new DefaultTableCellRenderer();
+        leftRenderer.setHorizontalAlignment(JLabel.LEFT);
+        this.getTabelaErrors().getColumnModel().getColumn(0).setCellRenderer(leftRenderer);
+        this.getTabelaErrors().getColumnModel().getColumn(1).setCellRenderer(leftRenderer);
     }
 
     @SuppressWarnings("unchecked")
@@ -27,50 +88,14 @@ public class ResultView extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(789, 557));
         setSize(new java.awt.Dimension(789, 557));
 
-        jTableResultado.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Erro", "Linha", "Coluna", "Token"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        jTableResultado.setModel(this.errorsTableModel);
         jScrollPane1.setViewportView(jTableResultado);
 
         jLabel1.setText("Análise léxica");
 
         jLabel2.setText("Resultado");
 
-        jTableLexica.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "ID", "Linha", "Lexema", "Token"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        jTableLexica.setModel(this.tokensTableModel);
         jScrollPane2.setViewportView(jTableLexica);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -108,12 +133,20 @@ public class ResultView extends javax.swing.JFrame {
         });
     }
 
-    public javax.swing.JTable getJTableLexica() {
-        return jTableResultado;
+    public DefaultTableModel getTokensModel() {
+        return tokensTableModel;
     }
     
-    public javax.swing.JTable getJTableResultado() {
-        return jTableLexica;
+    public DefaultTableModel getErrorsModel() {
+        return errorsTableModel;
+    }
+    
+    public JTable getTabelaTokens() {
+        return this.jTableLexica;
+    }
+    
+    public JTable getTabelaErrors() {
+        return this.jTableResultado;
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,7 +1,10 @@
 package com.ufes.compilador.Presenter;
 
+import com.ufes.compilador.Model.errorCollection;
+import com.ufes.compilador.Model.errorModel;
+import com.ufes.compilador.Model.tokenCollection;
+import com.ufes.compilador.Model.tokenModel;
 import com.ufes.compilador.View.ResultView;
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -9,32 +12,46 @@ import javax.swing.table.DefaultTableModel;
  * @author Danilo-Js
  */
 public class ResultPresenter {
-    private ResultView view; // Tela de resultados
+    private ResultView view; 
 
     public ResultPresenter() {
-        this.view = new ResultView(); // instanciando a tela de resultados
+        this.view = new ResultView();
+        this.atualizaTabelaTokens();
+        this.atualizaTabelaErrors();
         this.view.setVisible(true);
     }
     
-    private void atualizaTabelaResultado() {
+    private void atualizaTabelaTokens() {
         try {
-            DefaultTableModel modelo = (DefaultTableModel) this.view.getJTableResultado().getModel();
+            DefaultTableModel modelo = (DefaultTableModel) this.view.getTokensModel();
             modelo.setNumRows(0);
 
-//            for() {
-//                modelo.addRow(new Object[]{
-//                    // erro,
-//                    // linha,
-//                    // coluna,
-//                    // token,
-//                });
-//            }
+            
+            for(tokenModel token: new tokenCollection().tokens) {
+                modelo.addRow(new Object[]{
+                    token.line,
+                    token.token,
+                    token.text,
+                });
+            }
         } catch(RuntimeException e) {
-            JOptionPane.showMessageDialog(null, "Erro ao atualizar tabela: " + e);
+            System.out.println("Erro ao atualizar tabela: " + e);
+        }
+    }
+    
+    private void atualizaTabelaErrors() {
+        try {
+            DefaultTableModel modelo = (DefaultTableModel) this.view.getErrorsModel();
+            modelo.setNumRows(0);
+
+            for(errorModel error: new errorCollection().errors) {
+                modelo.addRow(new Object[]{
+                    error.line,
+                    error.description,
+                });
+            }
+        } catch(RuntimeException e) {
+            System.out.println("Erro ao atualizar tabela: " + e);
         }
     } 
-    
-    private void atualizaTabelaLexia() {
-        
-    }
 }
