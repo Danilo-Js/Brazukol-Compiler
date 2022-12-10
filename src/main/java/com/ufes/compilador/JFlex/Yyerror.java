@@ -1,8 +1,10 @@
 package com.ufes.compilador.JFlex;
 
+import com.ufes.compilador.DAO.errorDAO;
+
 public class Yyerror {
   public Yyerror(int line, String description) {
-    this.printError(line, description);
+    new errorDAO(line, description);
   }
   
   public void printError(int line, String description) {

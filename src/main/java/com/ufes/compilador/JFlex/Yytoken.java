@@ -1,8 +1,10 @@
 package com.ufes.compilador.JFlex;
 
+import com.ufes.compilador.DAO.tokenDAO;
+
 public class Yytoken {
   public Yytoken(String text, int line, String token) {
-    this.printToken(text, token, line);
+    new tokenDAO(text, token, line);
   }
   
   public void printToken(String text, String token, int line) {

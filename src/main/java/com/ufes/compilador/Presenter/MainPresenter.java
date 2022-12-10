@@ -1,5 +1,7 @@
 package com.ufes.compilador.Presenter;
 
+import com.ufes.compilador.DAO.errorDAO;
+import com.ufes.compilador.DAO.tokenDAO;
 import com.ufes.compilador.JFlex.YylexTest;
 import com.ufes.compilador.View.MainView;
 
@@ -15,6 +17,8 @@ public class MainPresenter {
         this.setIcons(); 
         
         this.view.getCompileButton().addActionListener((e) -> {
+            new errorDAO().resetaArquivo();
+            new tokenDAO().resetaArquivo();
             new YylexTest();
             new ResultPresenter();
         });
