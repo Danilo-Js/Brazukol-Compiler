@@ -93,7 +93,7 @@ public class ResultView extends javax.swing.JFrame {
 
         jLabel1.setText("Análise léxica");
 
-        jLabel2.setText("Resultado");
+        jLabel2.setText("Erros");
 
         jTableLexica.setModel(this.tokensTableModel);
         jScrollPane2.setViewportView(jTableLexica);
