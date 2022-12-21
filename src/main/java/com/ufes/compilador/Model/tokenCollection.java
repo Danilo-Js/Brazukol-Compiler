@@ -14,7 +14,7 @@ public class tokenCollection {
         this.tokens = new tokenDAO().getTokens();
     }
     
-    void printTokens() {
+    public void printTokens() {
         for(tokenModel token: tokens) {
             token.printToken();
         }
