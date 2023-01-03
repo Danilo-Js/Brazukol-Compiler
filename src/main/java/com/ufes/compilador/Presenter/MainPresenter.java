@@ -3,6 +3,7 @@ package com.ufes.compilador.Presenter;
 import com.ufes.compilador.DAO.errorDAO;
 import com.ufes.compilador.DAO.tokenDAO;
 import com.ufes.compilador.JFlex.YylexTest;
+import com.ufes.compilador.Syntatic.RunSyntatic;
 import com.ufes.compilador.View.MainView;
 
 /**
@@ -20,6 +21,7 @@ public class MainPresenter {
             new errorDAO().resetaArquivo();
             new tokenDAO().resetaArquivo();
             new YylexTest();
+            new RunSyntatic();
             new ResultPresenter();
         });
 

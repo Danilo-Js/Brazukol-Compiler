@@ -1,5 +1,6 @@
 package com.ufes.compilador.DAO;
 
+import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
 import java.io.File;
 import java.io.PrintWriter;
