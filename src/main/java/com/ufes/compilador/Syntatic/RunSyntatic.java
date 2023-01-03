@@ -7,9 +7,9 @@ import com.ufes.compilador.Model.tokenCollection;
  * @author Danilo-Js
  */
 public class RunSyntatic {
-    public tokenCollection tokenList;
     
     public RunSyntatic() {
+        tokenCollection tokenList = new tokenCollection();
         new Escopo(tokenList);
         new ErroDeTipo(tokenList);
         new Break_Continue(tokenList);
