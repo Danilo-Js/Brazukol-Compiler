@@ -9,7 +9,7 @@ import com.ufes.compilador.Model.tokenCollection;
 
 /**
  *
- * @author Danilo-Js
+ * @author
  */
 public class Escopo {
     public tokenCollection tokenList;
