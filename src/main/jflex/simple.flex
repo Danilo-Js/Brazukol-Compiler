@@ -28,48 +28,33 @@ Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
 %%
 
 <YYINITIAL> {
-  "," { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ":" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ";" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "(" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ")" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "[" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "]" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "{" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "}" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "." { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "+" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "-" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "*" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "/" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "<>" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "<"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "<=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ">"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ">=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "&"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  "|"  { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-  ":=" { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "," { return (new Yytoken(yytext(),yyline,"TKN_virgula")); }
+  ":" { return (new Yytoken(yytext(),yyline,"TKN_doisPontos")); }
+  ";" { return (new Yytoken(yytext(),yyline,"TKN_pontoEvirgula")); }
+  "(" { return (new Yytoken(yytext(),yyline,"TKN_abreParenteses")); }
+  ")" { return (new Yytoken(yytext(),yyline,"TKN_fechaParenteses")); }
+  "[" { return (new Yytoken(yytext(),yyline,"TKN_abreColchetes")); }
+  "]" { return (new Yytoken(yytext(),yyline,"TKN_fechaColchetes")); }
+  "{" { return (new Yytoken(yytext(),yyline,"TKN_abreChaves")); }
+  "}" { return (new Yytoken(yytext(),yyline,"TKN_fechaChaves")); }
+  "." { return (new Yytoken(yytext(),yyline,"TKN_ponto")); }
+  "+" { return (new Yytoken(yytext(),yyline,"TKN_mais")); }
+  "-" { return (new Yytoken(yytext(),yyline,"TKN_hifen")); }
+  "*" { return (new Yytoken(yytext(),yyline,"TKN_asterisco")); }
+  "/" { return (new Yytoken(yytext(),yyline,"TKN_barra")); }
+  "=" { return (new Yytoken(yytext(),yyline,"TKN_igual")); }
+  "<>" { return (new Yytoken(yytext(),yyline,"TKN_diferente")); }
+  "<"  { return (new Yytoken(yytext(),yyline,"TKN_menor")); }
+  "<=" { return (new Yytoken(yytext(),yyline,"TKN_menorOuIgual")); }
+  ">"  { return (new Yytoken(yytext(),yyline,"TKN_maior")); }
+  ">=" { return (new Yytoken(yytext(),yyline,"TKN_maiorOuIgual")); }
+  "&"  { return (new Yytoken(yytext(),yyline,"TKN_eComercial")); }
+  "|"  { return (new Yytoken(yytext(),yyline,"TKN_barraVertical")); }
+  ":=" { return (new Yytoken(yytext(),yyline,"TKN_recebe")); }
 
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 
-  "/*" { yybegin(COMMENT); comment_count++; }
-
-  \"{STRING_TEXT}\" {
-    String str =  yytext().substring(1,yylength()-1);
-    return (new Yytoken(str,yyline,"TKN_tokenEscolhido"));
-  }
-
-  \"{STRING_TEXT} {
-    String str =  yytext().substring(1,yytext().length());
-    Utility.error(Utility.E_UNCLOSEDSTR);
-    return (new Yytoken(str,yyline,"TKN_tokenEscolhido"));
-  }
-
-  {DIGIT}+ { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
-
-  {Ident} { return (new Yytoken(yytext(),yyline,"TKN_tokenEscolhido")); }
+  "programa" { return (new Yytoken(yytext(),yyline,"TKN_programa")); }
 }
 
 <COMMENT> {
@@ -78,11 +63,4 @@ Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
   {COMMENT_TEXT} { }
 }
 
-
 {NEWLINE} { }
-
-. {
-  System.out.println("Illegal character: <" + yytext() + ">");
-	Utility.error(Utility.E_UNMATCHED);
-}
-

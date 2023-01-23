@@ -127,6 +127,10 @@ public class MainView extends javax.swing.JFrame {
         });
     }
     
+    public String getTextToCompile() {
+        return jTextArea1.getText();
+    }
+    
     public javax.swing.JButton getCompileButton() {
         return compileButton;
     } 
