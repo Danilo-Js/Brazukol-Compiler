@@ -1,6 +1,6 @@
 
 -- TOKEN --
-Texto: programa
+Texto: PROGRAMA aBC
 Token: TKN_programa
 Linha: 0
 .-- FIM TOKEN --

@@ -13,6 +13,8 @@
 %char
 %state COMMENT
 %unicode
+%caseless
+%ignorecase
 
 %debug
 
@@ -24,6 +26,8 @@ WHITE_SPACE_CHAR=[\n\r\ \t\b\012]
 STRING_TEXT=(\\\"|[^\n\r\"\\]|\\{WHITE_SPACE_CHAR}+\\)*
 COMMENT_TEXT=([^*/\n]|[^*\n]"/"[^*\n]|[^/\n]"*"[^/\n]|"*"[^/\n]|"/"[^*\n])+
 Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
+
+programa=programa{WHITE_SPACE_CHAR}{STRING_TEXT}
 
 %%
 
@@ -54,7 +58,7 @@ Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
 
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 
-  "programa" { return (new Yytoken(yytext(),yyline,"TKN_programa")); }
+  {programa} { return (new Yytoken(yytext(),yyline,"TKN_nomeiaPrograma")); }
 }
 
 <COMMENT> {
