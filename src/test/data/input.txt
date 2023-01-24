@@ -2,7 +2,20 @@ programa test
 Constante a : inteiro = 1; b = 10.5
 Variavel c = 1,  d = 10000, vetChar : vetor [1..5] de caracter
 
-Procedimento proc1 (a :  inteiro)
+Procedimento verifica (a :  inteiro)
 Inicio
-	
+  se (a > 5) entao
+    escreva menorQueCinco
+Fim
+
+Funcao diminui (a :  inteiro)
+Inicio
+  se (a < 5) entao 
+    a = a -1 
+  senao 
+    verifica(a)
+Fim
+
+Inicio
+  diminui(15)
 Fim

@@ -31,8 +31,6 @@ ID=[_|a-z|A-Z][a-z|A-Z|0-9|_]*
 INTEIRO=0|[1-9][0-9]*
 REAL={INTEIRO}.{INTEIRO}|{INTEIRO},{INTEIRO}
 
-variavel=variavel|variavel{WHITE_SPACE_CHAR}
-startConstante=constante|constante{WHITE_SPACE_CHAR}
 tipo=inteiro|real|caracteres|caracter|booleano
 
 %%
@@ -63,6 +61,24 @@ tipo=inteiro|real|caracteres|caracter|booleano
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 }
 
+<YYINITIAL> "quociente" { return (new Yytoken(yytext(),yyline,"TKN_quociente")); }
+<YYINITIAL> "resto" { return (new Yytoken(yytext(),yyline,"TKN_resto")); }
+<YYINITIAL> "se" { return (new Yytoken(yytext(),yyline,"TKN_se")); }
+<YYINITIAL> "entao" { return (new Yytoken(yytext(),yyline,"TKN_entao")); }
+<YYINITIAL> "senao" { return (new Yytoken(yytext(),yyline,"TKN_senao")); }
+<YYINITIAL> "enquanto" { return (new Yytoken(yytext(),yyline,"TKN_enquanto")); }
+<YYINITIAL> "faca" { return (new Yytoken(yytext(),yyline,"TKN_faca")); }
+<YYINITIAL> "repita" { return (new Yytoken(yytext(),yyline,"TKN_repita")); }
+<YYINITIAL> "ate" { return (new Yytoken(yytext(),yyline,"TKN_ate")); }
+<YYINITIAL> "pare" { return (new Yytoken(yytext(),yyline,"TKN_pare")); }
+<YYINITIAL> "continua" { return (new Yytoken(yytext(),yyline,"TKN_continua")); }
+<YYINITIAL> "leia" { return (new Yytoken(yytext(),yyline,"TKN_leia")); }
+<YYINITIAL> "escreva" { return (new Yytoken(yytext(),yyline,"TKN_escreva")); }
+
+
+<YYINITIAL> "funcao" { return (new Yytoken(yytext(),yyline,"TKN_declarafuncao")); }
+
+
 <YYINITIAL> "vetor" { return (new Yytoken(yytext(),yyline,"TKN_declaraVetor")); }
 <YYINITIAL> "de" { return (new Yytoken(yytext(),yyline,"TKN_associaVetorATipo")); }
 
@@ -71,13 +87,13 @@ tipo=inteiro|real|caracteres|caracter|booleano
 <YYINITIAL> "fim" { return (new Yytoken(yytext(),yyline,"TKN_terminaBloco")); }
 
 <YYINITIAL> "programa" { return (new Yytoken(yytext(),yyline,"TKN_nomeiaPrograma")); }
-<YYINITIAL> {startConstante} { return (new Yytoken(yytext(),yyline,"TKN_iniciaConstante")); }
+<YYINITIAL> "constante" { return (new Yytoken(yytext(),yyline,"TKN_iniciaConstante")); }
 <YYINITIAL> {tipo} { return (new Yytoken(yytext(),yyline,"TKN_tipoVariavel")); }
 <YYINITIAL> {ID} { return (new Yytoken(yytext(),yyline,"TKN_identificador")); }
 <YYINITIAL> {INTEIRO} { return (new Yytoken(yytext(),yyline,"TKN_tipoInteiro")); }
 <YYINITIAL> {ALPHA} { return (new Yytoken(yytext(),yyline,"TKN_tipoCaractere")); }
 <YYINITIAL> {REAL} { return (new Yytoken(yytext(),yyline,"TKN_tipoReal")); }
-<YYINITIAL> {variavel} { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
+<YYINITIAL> "variavel" { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
 
 <COMMENT> {
   "/*" { comment_count++; }

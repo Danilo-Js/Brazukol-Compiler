@@ -2,7 +2,253 @@
 -- TOKEN --
 Texto: Fim
 Token: TKN_terminaBloco
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 15
+Token: TKN_tipoInteiro
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: diminui
+Token: TKN_identificador
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: verifica
+Token: TKN_identificador
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: senao
+Token: TKN_senao
+Linha: 14
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 1
+Token: TKN_tipoInteiro
+Linha: 13
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: -
+Token: TKN_hifen
+Linha: 13
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 13
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 13
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 13
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: entao
+Token: TKN_entao
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 5
+Token: TKN_tipoInteiro
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: <
+Token: TKN_menor
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: se
+Token: TKN_se
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 11
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: inteiro
+Token: TKN_tipoVariavel
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: diminui
+Token: TKN_identificador
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Funcao
+Token: TKN_declarafuncao
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 8
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: menorQueCinco
+Token: TKN_identificador
 Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: escreva
+Token: TKN_escreva
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: entao
+Token: TKN_entao
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 5
+Token: TKN_tipoInteiro
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: >
+Token: TKN_maior
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: se
+Token: TKN_se
+Linha: 6
 .-- FIM TOKEN --
 
 -- TOKEN --
@@ -42,7 +288,7 @@ Linha: 4
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: proc1
+Texto: verifica
 Token: TKN_identificador
 Linha: 4
 .-- FIM TOKEN --
@@ -168,8 +414,8 @@ Linha: 2
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Variavel 
-Token: TKN_iniciaVariavel
+Texto: Variavel
+Token: TKN_identificador
 Linha: 2
 .-- FIM TOKEN --
 
@@ -228,7 +474,7 @@ Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Constante 
+Texto: Constante
 Token: TKN_iniciaConstante
 Linha: 1
 .-- FIM TOKEN --
