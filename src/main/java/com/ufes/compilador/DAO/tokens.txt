@@ -1,6 +1,66 @@
 
 -- TOKEN --
-Texto: PROGRAMA aBC
-Token: TKN_programa
+Texto: 10.5
+Token: TKN_tipoReal
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: c2
+Token: TKN_identificador
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10
+Token: TKN_tipoInteiro
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: inteiro
+Token: TKN_tipoVariavel
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: c1
+Token: TKN_identificador
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: CONSTANTE 
+Token: TKN_iniciaConstante
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: programa abcd
+Token: TKN_nomeiaPrograma
 Linha: 0
 .-- FIM TOKEN --

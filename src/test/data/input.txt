@@ -1,1 +1,2 @@
-PROGRAMA aBC
+programa abcd
+CONSTANTE c1 : inteiro = 10; c2 = 10.5
