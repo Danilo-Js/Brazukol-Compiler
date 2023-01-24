@@ -1,5 +1,53 @@
 
 -- TOKEN --
+Texto: 10000
+Token: TKN_tipoInteiro
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: z
+Token: TKN_identificador
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 1
+Token: TKN_tipoInteiro
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: x
+Token: TKN_identificador
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Variavel 
+Token: TKN_iniciaVariavel
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
 Texto: 10.5
 Token: TKN_tipoReal
 Linha: 1
@@ -12,7 +60,7 @@ Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: c2
+Texto: b
 Token: TKN_identificador
 Linha: 1
 .-- FIM TOKEN --
@@ -24,7 +72,7 @@ Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: 10
+Texto: 1
 Token: TKN_tipoInteiro
 Linha: 1
 .-- FIM TOKEN --
@@ -48,19 +96,25 @@ Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: c1
+Texto: a
 Token: TKN_identificador
 Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: CONSTANTE 
+Texto: Constante 
 Token: TKN_iniciaConstante
 Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: programa abcd
+Texto: test
+Token: TKN_identificador
+Linha: 0
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: programa
 Token: TKN_nomeiaPrograma
 Linha: 0
 .-- FIM TOKEN --

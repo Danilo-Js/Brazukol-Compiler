@@ -1,2 +1,3 @@
-programa abcd
-CONSTANTE c1 : inteiro = 10; c2 = 10.5
+programa test
+Constante a : inteiro = 1; b = 10.5
+Variavel x = 1,  z = 10000

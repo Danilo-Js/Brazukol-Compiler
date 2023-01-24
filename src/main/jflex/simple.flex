@@ -31,7 +31,8 @@ ID=[_|a-z|A-Z][a-z|A-Z|0-9|_]*
 INTEIRO=0|[1-9][0-9]*
 REAL={INTEIRO}.{INTEIRO}|{INTEIRO},{INTEIRO}
 
-programa=programa{WHITE_SPACE_CHAR}{STRING_TEXT}
+variavel=variavel|variavel{WHITE_SPACE_CHAR}
+programa=programa
 startConstante=constante|constante{WHITE_SPACE_CHAR}
 tipo=inteiro|real|string|caractere|booleano
 
@@ -60,7 +61,6 @@ tipo=inteiro|real|string|caractere|booleano
   ">=" { return (new Yytoken(yytext(),yyline,"TKN_maiorOuIgual")); }
   "&"  { return (new Yytoken(yytext(),yyline,"TKN_eComercial")); }
   "|"  { return (new Yytoken(yytext(),yyline,"TKN_barraVertical")); }
-  ":=" { return (new Yytoken(yytext(),yyline,"TKN_recebe")); }
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 }
 
@@ -71,6 +71,8 @@ tipo=inteiro|real|string|caractere|booleano
 <YYINITIAL> {INTEIRO} { return (new Yytoken(yytext(),yyline,"TKN_tipoInteiro")); }
 <YYINITIAL> {ALPHA} { return (new Yytoken(yytext(),yyline,"TKN_tipoCaractere")); }
 <YYINITIAL> {REAL} { return (new Yytoken(yytext(),yyline,"TKN_tipoReal")); }
+<YYINITIAL> {variavel} { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
+
 
 <COMMENT> {
   "/*" { comment_count++; }
