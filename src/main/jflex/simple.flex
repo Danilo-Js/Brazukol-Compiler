@@ -32,9 +32,8 @@ INTEIRO=0|[1-9][0-9]*
 REAL={INTEIRO}.{INTEIRO}|{INTEIRO},{INTEIRO}
 
 variavel=variavel|variavel{WHITE_SPACE_CHAR}
-programa=programa
 startConstante=constante|constante{WHITE_SPACE_CHAR}
-tipo=inteiro|real|string|caractere|booleano
+tipo=inteiro|real|caracteres|caracter|booleano
 
 %%
 
@@ -64,7 +63,14 @@ tipo=inteiro|real|string|caractere|booleano
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 }
 
-<YYINITIAL> {programa} { return (new Yytoken(yytext(),yyline,"TKN_nomeiaPrograma")); }
+<YYINITIAL> "vetor" { return (new Yytoken(yytext(),yyline,"TKN_declaraVetor")); }
+<YYINITIAL> "de" { return (new Yytoken(yytext(),yyline,"TKN_associaVetorATipo")); }
+
+<YYINITIAL> "procedimento" { return (new Yytoken(yytext(),yyline,"TKN_declaraProcedimento")); }
+<YYINITIAL> "inicio" { return (new Yytoken(yytext(),yyline,"TKN_iniciaBloco")); }
+<YYINITIAL> "fim" { return (new Yytoken(yytext(),yyline,"TKN_terminaBloco")); }
+
+<YYINITIAL> "programa" { return (new Yytoken(yytext(),yyline,"TKN_nomeiaPrograma")); }
 <YYINITIAL> {startConstante} { return (new Yytoken(yytext(),yyline,"TKN_iniciaConstante")); }
 <YYINITIAL> {tipo} { return (new Yytoken(yytext(),yyline,"TKN_tipoVariavel")); }
 <YYINITIAL> {ID} { return (new Yytoken(yytext(),yyline,"TKN_identificador")); }
@@ -72,7 +78,6 @@ tipo=inteiro|real|string|caractere|booleano
 <YYINITIAL> {ALPHA} { return (new Yytoken(yytext(),yyline,"TKN_tipoCaractere")); }
 <YYINITIAL> {REAL} { return (new Yytoken(yytext(),yyline,"TKN_tipoReal")); }
 <YYINITIAL> {variavel} { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
-
 
 <COMMENT> {
   "/*" { comment_count++; }

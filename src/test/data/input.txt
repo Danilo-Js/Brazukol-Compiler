@@ -1,3 +1,8 @@
 programa test
 Constante a : inteiro = 1; b = 10.5
-Variavel x = 1,  z = 10000
+Variavel c = 1,  d = 10000, vetChar : vetor [1..5] de caracter
+
+Procedimento proc1 (a :  inteiro)
+Inicio
+	
+Fim
