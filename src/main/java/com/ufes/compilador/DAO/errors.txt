@@ -1,5 +1,0 @@
-
--- ERRO --
-Linha: 1
-Erro: Variável/Constante c sendo declarada mais de uma vez
-.-- FIM ERRO --

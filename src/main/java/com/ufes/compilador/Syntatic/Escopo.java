@@ -30,10 +30,8 @@ public class Escopo {
     
     public void checkVar(String variable, int line) {
         if (variaveis.contains(variable)) {
-            System.out.println("contém");
             new Yyerror(line, "Variável/Constante " + variable + " sendo declarada mais de uma vez");
         } else {
-            System.out.println("nao contem: " + variable);
             variaveis.add(variable);
         }
 
@@ -42,17 +40,14 @@ public class Escopo {
     public void verify() {
         for(tokenModel tk : tokenList.tokensReverse) {
             if (this.isCapturingVars) {
-                System.out.println("capturando");
                 if (tk.token.equals("TKN_identificador")) {
                     this.checkVar(tk.text, tk.line);
                 }
             }
             if (tk.token.equals(token_startVars) || tk.token.equals(token_startConsts)) {
                 this.isCapturingVars = true;
-                System.out.println("é pra capturar");
             } else if (tk.token.equals(token_inicio) || tk.token.equals(token_procedimento) || tk.token.equals(token_funcao)) {
                 this.isCapturingVars = false;
-                System.out.println("n eh pra capturar");
             }
         }
     }

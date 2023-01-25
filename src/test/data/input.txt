@@ -1,2 +1,4 @@
-variavel c
-constante c
+variavel a : vetor [1..3] de inteiro, b : vetor [1..5] de real
+constante c : vetor [1..3] de caracter, d : vetor[1..5000] de real
+
+Inicio
