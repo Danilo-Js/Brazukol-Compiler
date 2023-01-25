@@ -114,18 +114,18 @@ public class Yylex {
     "\1\22\1\37\2\22\1\0\1\22\1\0\6\22\1\0"+
     "\3\22\3\0\4\22\1\0\3\22\1\0\1\40\3\22"+
     "\1\0\2\41\1\42\3\22\1\43\1\22\1\0\1\22"+
-    "\1\0\1\22\1\0\1\22\2\0\4\22\2\0\1\22"+
+    "\1\0\2\22\1\0\1\22\2\0\4\22\2\0\1\22"+
     "\1\44\1\22\1\0\2\22\1\0\1\22\1\0\3\22"+
-    "\1\0\1\22\1\0\2\45\1\46\1\0\1\47\1\46"+
-    "\4\22\2\0\2\22\1\0\1\50\2\51\1\22\1\0"+
-    "\3\22\1\0\2\52\1\0\3\22\2\0\1\22\2\53"+
-    "\1\43\1\22\1\0\2\22\2\0\1\43\1\22\2\54"+
-    "\1\0\1\55\1\22\1\0\1\56\1\22\1\0\1\57"+
-    "\1\22\2\60\1\22\1\0\2\61\1\22\1\0\1\22"+
-    "\1\0\2\62";
+    "\1\0\1\22\1\0\2\45\1\46\1\22\1\0\1\47"+
+    "\1\46\4\22\2\0\2\22\1\0\1\50\2\51\1\22"+
+    "\1\0\3\22\1\0\2\52\1\22\1\0\3\22\2\0"+
+    "\1\22\2\53\1\43\1\22\1\0\2\22\1\0\1\22"+
+    "\1\0\1\43\1\22\2\54\1\0\1\55\1\22\1\0"+
+    "\1\56\1\22\1\0\2\57\1\22\2\60\1\22\1\0"+
+    "\2\61\1\22\1\0\1\22\1\0\2\62";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[235];
+    int [] result = new int[240];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -169,20 +169,20 @@ public class Yylex {
     "\0\u141f\0\u1452\0\u1485\0\u0363\0\231\0\u0363\0\u14b8\0\u14eb"+
     "\0\u151e\0\u0363\0\u1551\0\u1584\0\u15b7\0\u15ea\0\u161d\0\u1650"+
     "\0\u1683\0\u16b6\0\u16e9\0\u171c\0\u174f\0\u1782\0\u17b5\0\u17e8"+
-    "\0\u181b\0\u184e\0\u0363\0\u1881\0\u18b4\0\u18e7\0\u191a\0\u194d"+
+    "\0\u181b\0\u184e\0\u1881\0\u0363\0\u18b4\0\u18e7\0\u191a\0\u194d"+
     "\0\u1980\0\u19b3\0\u19e6\0\u1a19\0\u1a4c\0\u1a7f\0\u1ab2\0\u1ae5"+
-    "\0\u0363\0\231\0\u0363\0\u1b18\0\u0363\0\231\0\u1b4b\0\u1b7e"+
-    "\0\u1bb1\0\u1be4\0\u1c17\0\u1c4a\0\u1c7d\0\u1cb0\0\u1ce3\0\u0363"+
-    "\0\u0363\0\231\0\u1d16\0\u1d49\0\u1d7c\0\u1daf\0\u1de2\0\u1e15"+
-    "\0\u0363\0\231\0\u1e48\0\u1e7b\0\u1eae\0\u1ee1\0\u1f14\0\u1f47"+
-    "\0\u1f7a\0\u0363\0\231\0\231\0\u1fad\0\u1fe0\0\u2013\0\u2046"+
-    "\0\u2079\0\u20ac\0\u20df\0\u2112\0\u0363\0\231\0\u2145\0\u0363"+
-    "\0\u2178\0\u21ab\0\u0363\0\u21de\0\u2211\0\231\0\u2244\0\u0363"+
-    "\0\231\0\u2277\0\u22aa\0\u0363\0\231\0\u22dd\0\u2310\0\u2343"+
-    "\0\u2376\0\u0363\0\231";
+    "\0\u1b18\0\u0363\0\231\0\u0363\0\u1b4b\0\u1b7e\0\u0363\0\231"+
+    "\0\u1bb1\0\u1be4\0\u1c17\0\u1c4a\0\u1c7d\0\u1cb0\0\u1ce3\0\u1d16"+
+    "\0\u1d49\0\u0363\0\u0363\0\231\0\u1d7c\0\u1daf\0\u1de2\0\u1e15"+
+    "\0\u1e48\0\u1e7b\0\u0363\0\231\0\u1eae\0\u1ee1\0\u1f14\0\u1f47"+
+    "\0\u1f7a\0\u1fad\0\u1fe0\0\u2013\0\u0363\0\231\0\231\0\u2046"+
+    "\0\u2079\0\u20ac\0\u20df\0\u2112\0\u2145\0\u2178\0\u21ab\0\u21de"+
+    "\0\u0363\0\231\0\u2211\0\u0363\0\u2244\0\u2277\0\u0363\0\u22aa"+
+    "\0\u22dd\0\u0363\0\231\0\u2310\0\u0363\0\231\0\u2343\0\u2376"+
+    "\0\u0363\0\231\0\u23a9\0\u23dc\0\u240f\0\u2442\0\u0363\0\231";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[235];
+    int [] result = new int[240];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -294,90 +294,95 @@ public class Yylex {
     "\1\35\12\0\2\35\5\0\21\35\1\215\2\35\3\0"+
     "\1\35\54\0\1\216\17\0\1\35\12\0\2\35\5\0"+
     "\1\217\23\35\3\0\1\35\11\0\1\35\12\0\2\35"+
-    "\5\0\24\35\3\0\1\35\1\0\1\220\7\0\1\35"+
-    "\12\0\2\35\5\0\14\35\1\221\7\35\3\0\1\35"+
-    "\37\0\1\222\56\0\1\223\32\0\12\124\1\4\1\165"+
-    "\47\124\6\0\1\35\12\0\2\35\5\0\4\35\1\224"+
+    "\5\0\10\35\1\220\13\35\3\0\1\35\1\0\1\221"+
+    "\7\0\1\35\12\0\2\35\5\0\14\35\1\222\7\35"+
+    "\3\0\1\35\37\0\1\223\56\0\1\224\32\0\12\124"+
+    "\1\4\1\165\47\124\6\0\1\35\12\0\2\35\5\0"+
+    "\4\35\1\225\17\35\3\0\1\35\11\0\1\35\12\0"+
+    "\2\35\5\0\2\35\1\226\21\35\3\0\1\35\11\0"+
+    "\1\35\12\0\2\35\5\0\21\35\1\227\2\35\3\0"+
+    "\1\35\11\0\1\35\12\0\2\35\5\0\10\35\1\230"+
+    "\13\35\3\0\1\35\1\0\1\231\52\0\1\232\17\0"+
+    "\1\35\12\0\2\35\5\0\1\233\23\35\3\0\1\35"+
+    "\11\0\1\35\12\0\2\35\5\0\14\35\1\234\7\35"+
+    "\3\0\1\35\11\0\1\35\12\0\2\35\5\0\4\35"+
+    "\1\235\17\35\3\0\1\35\37\0\1\236\34\0\1\35"+
+    "\12\0\2\35\5\0\1\237\23\35\3\0\1\35\11\0"+
+    "\1\35\12\0\2\35\5\0\10\35\1\240\13\35\3\0"+
+    "\1\35\1\0\1\241\7\0\1\35\12\0\2\35\5\0"+
+    "\10\35\1\242\13\35\3\0\1\35\1\0\1\243\41\0"+
+    "\1\241\20\0\1\241\7\0\1\35\12\0\2\35\5\0"+
+    "\4\35\1\244\17\35\3\0\1\35\11\0\1\35\12\0"+
+    "\2\35\5\0\17\35\1\245\4\35\3\0\1\35\11\0"+
+    "\1\35\12\0\2\35\5\0\10\35\1\246\13\35\3\0"+
+    "\1\35\1\0\1\247\7\0\1\35\12\0\2\35\5\0"+
+    "\21\35\1\250\2\35\3\0\1\35\54\0\1\251\17\0"+
+    "\1\35\12\0\2\35\5\0\14\35\1\252\7\35\3\0"+
+    "\1\35\47\0\1\253\24\0\1\35\12\0\2\35\5\0"+
+    "\14\35\1\254\7\35\3\0\1\35\11\0\1\35\12\0"+
+    "\2\35\5\0\1\255\23\35\3\0\1\35\33\0\1\256"+
+    "\40\0\1\35\12\0\2\35\5\0\17\35\1\257\4\35"+
+    "\3\0\1\35\43\0\1\243\20\0\1\243\45\0\1\260"+
+    "\24\0\1\35\12\0\2\35\5\0\1\261\23\35\3\0"+
+    "\1\35\11\0\1\35\12\0\2\35\5\0\21\35\1\262"+
+    "\2\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
+    "\1\263\23\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\13\35\1\264\10\35\3\0\1\35\46\0\1\265"+
+    "\47\0\1\266\40\0\1\35\12\0\2\35\5\0\13\35"+
+    "\1\267\10\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\23\35\1\270\3\0\1\35\56\0\1\271\15\0"+
+    "\1\35\12\0\2\35\5\0\14\35\1\272\7\35\3\0"+
+    "\1\35\11\0\1\35\12\0\2\35\5\0\14\35\1\273"+
+    "\7\35\3\0\1\35\47\0\1\274\24\0\1\35\12\0"+
+    "\2\35\5\0\17\35\1\275\4\35\3\0\1\35\52\0"+
+    "\1\276\21\0\1\35\12\0\2\35\5\0\3\35\1\277"+
+    "\20\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
+    "\1\300\23\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\4\35\1\301\17\35\3\0\1\35\37\0\1\302"+
+    "\34\0\1\35\12\0\2\35\5\0\1\303\23\35\3\0"+
+    "\1\35\33\0\1\304\40\0\1\35\12\0\2\35\5\0"+
+    "\23\35\1\305\3\0\1\35\56\0\1\306\15\0\1\35"+
+    "\12\0\2\35\5\0\13\35\1\275\10\35\3\0\1\35"+
+    "\11\0\1\35\12\0\2\35\5\0\4\35\1\307\17\35"+
+    "\3\0\1\35\11\0\1\35\12\0\2\35\5\0\13\35"+
+    "\1\310\10\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\22\35\1\311\1\35\3\0\1\35\55\0\1\312"+
+    "\53\0\1\313\25\0\1\35\12\0\2\35\5\0\21\35"+
+    "\1\314\2\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\1\315\23\35\3\0\1\35\33\0\1\316\40\0"+
+    "\1\35\12\0\2\35\5\0\14\35\1\212\7\35\3\0"+
+    "\1\35\47\0\1\317\24\0\1\35\12\0\2\35\5\0"+
+    "\10\35\1\320\13\35\3\0\1\35\1\0\1\321\7\0"+
+    "\1\35\12\0\2\35\5\0\12\35\1\322\11\35\3\0"+
+    "\1\35\11\0\1\35\12\0\2\35\5\0\13\35\1\323"+
+    "\10\35\3\0\1\35\46\0\1\324\25\0\1\35\12\0"+
+    "\2\35\5\0\4\35\1\325\17\35\3\0\1\35\37\0"+
+    "\1\326\34\0\1\35\12\0\2\35\5\0\17\35\1\327"+
+    "\4\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
+    "\21\35\1\330\2\35\3\0\1\35\11\0\1\35\12\0"+
+    "\2\35\5\0\1\331\23\35\3\0\1\35\33\0\1\332"+
+    "\103\0\1\333\17\0\1\35\12\0\2\35\5\0\14\35"+
+    "\1\334\7\35\3\0\1\35\11\0\1\35\12\0\2\35"+
+    "\5\0\12\35\1\335\11\35\3\0\1\35\45\0\1\336"+
+    "\26\0\1\35\12\0\2\35\5\0\1\337\23\35\3\0"+
+    "\1\35\11\0\1\35\12\0\2\35\5\0\21\35\1\340"+
+    "\2\35\3\0\1\35\54\0\1\341\17\0\1\35\12\0"+
+    "\2\35\5\0\11\35\1\342\12\35\3\0\1\35\44\0"+
+    "\1\343\27\0\1\35\12\0\2\35\5\0\4\35\1\344"+
     "\17\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
-    "\2\35\1\225\21\35\3\0\1\35\11\0\1\35\12\0"+
-    "\2\35\5\0\21\35\1\226\2\35\3\0\1\35\11\0"+
-    "\1\35\12\0\2\35\5\0\10\35\1\227\13\35\3\0"+
-    "\1\35\1\0\1\230\52\0\1\231\17\0\1\35\12\0"+
-    "\2\35\5\0\1\232\23\35\3\0\1\35\11\0\1\35"+
-    "\12\0\2\35\5\0\14\35\1\233\7\35\3\0\1\35"+
-    "\11\0\1\35\12\0\2\35\5\0\4\35\1\234\17\35"+
-    "\3\0\1\35\37\0\1\235\34\0\1\35\12\0\2\35"+
-    "\5\0\1\236\23\35\3\0\1\35\11\0\1\35\12\0"+
-    "\2\35\5\0\10\35\1\237\13\35\3\0\1\35\1\0"+
-    "\1\240\7\0\1\35\12\0\2\35\5\0\10\35\1\241"+
-    "\13\35\3\0\1\35\1\0\1\242\41\0\1\240\20\0"+
-    "\1\240\7\0\1\35\12\0\2\35\5\0\4\35\1\243"+
-    "\17\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
-    "\17\35\1\244\4\35\3\0\1\35\11\0\1\35\12\0"+
-    "\2\35\5\0\10\35\1\245\13\35\3\0\1\35\1\0"+
-    "\1\246\7\0\1\35\12\0\2\35\5\0\21\35\1\247"+
-    "\2\35\3\0\1\35\54\0\1\250\17\0\1\35\12\0"+
-    "\2\35\5\0\14\35\1\251\7\35\3\0\1\35\47\0"+
-    "\1\252\24\0\1\35\12\0\2\35\5\0\14\35\1\253"+
-    "\7\35\3\0\1\35\33\0\1\254\40\0\1\35\12\0"+
-    "\2\35\5\0\17\35\1\255\4\35\3\0\1\35\43\0"+
-    "\1\242\20\0\1\242\45\0\1\256\24\0\1\35\12\0"+
-    "\2\35\5\0\1\257\23\35\3\0\1\35\11\0\1\35"+
-    "\12\0\2\35\5\0\21\35\1\260\2\35\3\0\1\35"+
-    "\11\0\1\35\12\0\2\35\5\0\1\261\23\35\3\0"+
-    "\1\35\11\0\1\35\12\0\2\35\5\0\13\35\1\262"+
-    "\10\35\3\0\1\35\46\0\1\263\47\0\1\264\40\0"+
-    "\1\35\12\0\2\35\5\0\13\35\1\265\10\35\3\0"+
-    "\1\35\11\0\1\35\12\0\2\35\5\0\23\35\1\266"+
-    "\3\0\1\35\56\0\1\267\15\0\1\35\12\0\2\35"+
-    "\5\0\14\35\1\270\7\35\3\0\1\35\11\0\1\35"+
-    "\12\0\2\35\5\0\14\35\1\271\7\35\3\0\1\35"+
-    "\47\0\1\272\24\0\1\35\12\0\2\35\5\0\17\35"+
-    "\1\273\4\35\3\0\1\35\52\0\1\274\21\0\1\35"+
-    "\12\0\2\35\5\0\3\35\1\275\20\35\3\0\1\35"+
-    "\11\0\1\35\12\0\2\35\5\0\1\276\23\35\3\0"+
-    "\1\35\11\0\1\35\12\0\2\35\5\0\4\35\1\277"+
-    "\17\35\3\0\1\35\37\0\1\300\34\0\1\35\12\0"+
-    "\2\35\5\0\1\301\23\35\3\0\1\35\33\0\1\302"+
-    "\105\0\1\303\15\0\1\35\12\0\2\35\5\0\13\35"+
-    "\1\273\10\35\3\0\1\35\11\0\1\35\12\0\2\35"+
-    "\5\0\4\35\1\304\17\35\3\0\1\35\11\0\1\35"+
-    "\12\0\2\35\5\0\13\35\1\305\10\35\3\0\1\35"+
-    "\11\0\1\35\12\0\2\35\5\0\22\35\1\306\1\35"+
-    "\3\0\1\35\55\0\1\307\53\0\1\310\25\0\1\35"+
-    "\12\0\2\35\5\0\21\35\1\311\2\35\3\0\1\35"+
-    "\11\0\1\35\12\0\2\35\5\0\1\312\23\35\3\0"+
-    "\1\35\33\0\1\313\40\0\1\35\12\0\2\35\5\0"+
-    "\14\35\1\212\7\35\3\0\1\35\47\0\1\314\24\0"+
-    "\1\35\12\0\2\35\5\0\10\35\1\315\13\35\3\0"+
-    "\1\35\1\0\1\316\7\0\1\35\12\0\2\35\5\0"+
-    "\12\35\1\317\11\35\3\0\1\35\11\0\1\35\12\0"+
-    "\2\35\5\0\13\35\1\320\10\35\3\0\1\35\46\0"+
-    "\1\321\53\0\1\322\34\0\1\35\12\0\2\35\5\0"+
-    "\17\35\1\323\4\35\3\0\1\35\11\0\1\35\12\0"+
-    "\2\35\5\0\21\35\1\324\2\35\3\0\1\35\11\0"+
-    "\1\35\12\0\2\35\5\0\1\325\23\35\3\0\1\35"+
-    "\33\0\1\326\103\0\1\327\17\0\1\35\12\0\2\35"+
-    "\5\0\14\35\1\330\7\35\3\0\1\35\11\0\1\35"+
-    "\12\0\2\35\5\0\12\35\1\331\11\35\3\0\1\35"+
-    "\45\0\1\332\26\0\1\35\12\0\2\35\5\0\1\333"+
-    "\23\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
-    "\21\35\1\334\2\35\3\0\1\35\54\0\1\335\52\0"+
-    "\1\336\27\0\1\35\12\0\2\35\5\0\4\35\1\337"+
-    "\17\35\3\0\1\35\11\0\1\35\12\0\2\35\5\0"+
-    "\4\35\1\340\17\35\3\0\1\35\37\0\1\341\34\0"+
-    "\1\35\12\0\2\35\5\0\4\35\1\342\17\35\3\0"+
-    "\1\35\37\0\1\343\34\0\1\35\12\0\2\35\5\0"+
-    "\4\35\1\344\17\35\3\0\1\35\37\0\1\345\34\0"+
+    "\4\35\1\345\17\35\3\0\1\35\37\0\1\346\34\0"+
+    "\1\35\12\0\2\35\5\0\4\35\1\347\17\35\3\0"+
+    "\1\35\37\0\1\350\34\0\1\35\12\0\2\35\5\0"+
+    "\4\35\1\351\17\35\3\0\1\35\37\0\1\352\34\0"+
     "\1\35\12\0\2\35\5\0\20\35\1\212\3\35\3\0"+
-    "\1\35\2\0\1\314\6\0\1\35\12\0\2\35\5\0"+
-    "\13\35\1\346\10\35\3\0\1\35\46\0\1\347\25\0"+
-    "\1\35\12\0\2\35\5\0\21\35\1\350\2\35\3\0"+
-    "\1\35\54\0\1\351\17\0\1\35\12\0\2\35\5\0"+
-    "\14\35\1\352\7\35\3\0\1\35\47\0\1\353\16\0";
+    "\1\35\2\0\1\317\6\0\1\35\12\0\2\35\5\0"+
+    "\13\35\1\353\10\35\3\0\1\35\46\0\1\354\25\0"+
+    "\1\35\12\0\2\35\5\0\21\35\1\355\2\35\3\0"+
+    "\1\35\54\0\1\356\17\0\1\35\12\0\2\35\5\0"+
+    "\14\35\1\357\7\35\3\0\1\35\47\0\1\360\16\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[9129];
+    int [] result = new int[9333];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -427,18 +432,18 @@ public class Yylex {
     "\2\0\1\11\10\1\1\0\3\1\1\11\2\1\1\0"+
     "\1\1\1\0\6\1\1\0\3\1\3\0\4\1\1\0"+
     "\3\1\1\0\4\1\1\0\1\1\1\11\6\1\1\0"+
-    "\1\1\1\0\1\1\1\0\1\1\2\0\4\1\2\0"+
+    "\1\1\1\0\2\1\1\0\1\1\2\0\4\1\2\0"+
     "\3\1\1\0\2\1\1\0\1\1\1\0\3\1\1\0"+
-    "\1\1\1\0\1\1\1\11\1\1\1\0\1\1\1\11"+
+    "\1\1\1\0\1\1\1\11\2\1\1\0\1\1\1\11"+
     "\4\1\2\0\2\1\1\0\2\1\1\11\1\1\1\0"+
-    "\3\1\1\0\1\1\1\11\1\0\3\1\2\0\2\1"+
-    "\2\11\1\1\1\0\2\1\2\0\3\1\1\11\1\0"+
-    "\2\1\1\0\2\1\1\0\1\11\2\1\1\11\1\1"+
-    "\1\0\1\1\1\11\1\1\1\0\1\1\1\0\1\1"+
-    "\1\11";
+    "\3\1\1\0\1\1\1\11\1\1\1\0\3\1\2\0"+
+    "\2\1\2\11\1\1\1\0\2\1\1\0\1\1\1\0"+
+    "\3\1\1\11\1\0\2\1\1\0\2\1\1\0\1\1"+
+    "\1\11\2\1\1\11\1\1\1\0\1\1\1\11\1\1"+
+    "\1\0\1\1\1\0\1\1\1\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[235];
+    int [] result = new int[240];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -935,7 +940,7 @@ public class Yylex {
           case 51: break;
           case 2:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [73] { return (new Yytoken(yytext(),yyline,\"TKN_aspas\")); }");
+            System.out.println("action [75] { return (new Yytoken(yytext(),yyline,\"TKN_aspas\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_aspas"));
             }
             // fall through
@@ -1005,7 +1010,7 @@ public class Yylex {
           case 61: break;
           case 12:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [104] { return (new Yytoken(yytext(),yyline,\"TKN_tipoInteiro\")); }");
+            System.out.println("action [105] { return (new Yytoken(yytext(),yyline,\"TKN_tipoInteiro\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_tipoInteiro"));
             }
             // fall through
@@ -1047,7 +1052,7 @@ public class Yylex {
           case 67: break;
           case 18:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [103] { return (new Yytoken(yytext(),yyline,\"TKN_identificador\")); }");
+            System.out.println("action [104] { return (new Yytoken(yytext(),yyline,\"TKN_identificador\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_identificador"));
             }
             // fall through
@@ -1110,168 +1115,168 @@ public class Yylex {
           case 76: break;
           case 27:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [94] { return (new Yytoken(yytext(),yyline,\"TKN_associaVetorATipo\")); }");
+            System.out.println("action [96] { return (new Yytoken(yytext(),yyline,\"TKN_associaVetorATipo\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_associaVetorATipo"));
             }
             // fall through
           case 77: break;
           case 28:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [77] { return (new Yytoken(yytext(),yyline,\"TKN_se\")); }");
+            System.out.println("action [79] { return (new Yytoken(yytext(),yyline,\"TKN_se\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_se"));
             }
             // fall through
           case 78: break;
           case 29:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [106] { return (new Yytoken(yytext(),yyline,\"TKN_tipoReal\")); }");
+            System.out.println("action [107] { return (new Yytoken(yytext(),yyline,\"TKN_tipoReal\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_tipoReal"));
             }
             // fall through
           case 79: break;
           case 30:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [83] { return (new Yytoken(yytext(),yyline,\"TKN_ate\")); }");
+            System.out.println("action [85] { return (new Yytoken(yytext(),yyline,\"TKN_ate\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_ate"));
             }
             // fall through
           case 80: break;
           case 31:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [98] { return (new Yytoken(yytext(),yyline,\"TKN_terminaBloco\")); }");
+            System.out.println("action [100] { return (new Yytoken(yytext(),yyline,\"TKN_terminaBloco\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_terminaBloco"));
             }
             // fall through
           case 81: break;
           case 32:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [81] { return (new Yytoken(yytext(),yyline,\"TKN_faca\")); }");
+            System.out.println("action [83] { return (new Yytoken(yytext(),yyline,\"TKN_faca\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_faca"));
             }
             // fall through
           case 82: break;
           case 33:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [86] { return (new Yytoken(yytext(),yyline,\"TKN_leia\")); }");
+            System.out.println("action [88] { return (new Yytoken(yytext(),yyline,\"TKN_leia\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_leia"));
             }
             // fall through
           case 83: break;
           case 34:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [84] { return (new Yytoken(yytext(),yyline,\"TKN_pare\")); }");
+            System.out.println("action [86] { return (new Yytoken(yytext(),yyline,\"TKN_pare\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_pare"));
             }
             // fall through
           case 84: break;
           case 35:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [102] { return (new Yytoken(yytext(),yyline,\"TKN_tipoVariavel\")); }");
+            System.out.println("action [103] { return (new Yytoken(yytext(),yyline,\"TKN_tipoVariavel\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_tipoVariavel"));
             }
             // fall through
           case 85: break;
           case 36:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [78] { return (new Yytoken(yytext(),yyline,\"TKN_entao\")); }");
+            System.out.println("action [80] { return (new Yytoken(yytext(),yyline,\"TKN_entao\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_entao"));
             }
             // fall through
           case 86: break;
           case 37:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [76] { return (new Yytoken(yytext(),yyline,\"TKN_resto\")); }");
+            System.out.println("action [78] { return (new Yytoken(yytext(),yyline,\"TKN_resto\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_resto"));
             }
             // fall through
           case 87: break;
           case 38:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [79] { return (new Yytoken(yytext(),yyline,\"TKN_senao\")); }");
+            System.out.println("action [81] { return (new Yytoken(yytext(),yyline,\"TKN_senao\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_senao"));
             }
             // fall through
           case 88: break;
           case 39:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [93] { return (new Yytoken(yytext(),yyline,\"TKN_declaraVetor\")); }");
+            System.out.println("action [95] { return (new Yytoken(yytext(),yyline,\"TKN_declaraVetor\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_declaraVetor"));
             }
             // fall through
           case 89: break;
           case 40:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [90] { return (new Yytoken(yytext(),yyline,\"TKN_declarafuncao\")); }");
+            System.out.println("action [92] { return (new Yytoken(yytext(),yyline,\"TKN_declarafuncao\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_declarafuncao"));
             }
             // fall through
           case 90: break;
           case 41:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [97] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaBloco\")); }");
+            System.out.println("action [99] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaBloco\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_iniciaBloco"));
             }
             // fall through
           case 91: break;
           case 42:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [82] { return (new Yytoken(yytext(),yyline,\"TKN_repita\")); }");
+            System.out.println("action [84] { return (new Yytoken(yytext(),yyline,\"TKN_repita\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_repita"));
             }
             // fall through
           case 92: break;
           case 43:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [87] { return (new Yytoken(yytext(),yyline,\"TKN_escreva\")); }");
+            System.out.println("action [89] { return (new Yytoken(yytext(),yyline,\"TKN_escreva\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_escreva"));
             }
             // fall through
           case 93: break;
           case 44:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [85] { return (new Yytoken(yytext(),yyline,\"TKN_continua\")); }");
+            System.out.println("action [87] { return (new Yytoken(yytext(),yyline,\"TKN_continua\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_continua"));
             }
             // fall through
           case 94: break;
           case 45:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [80] { return (new Yytoken(yytext(),yyline,\"TKN_enquanto\")); }");
+            System.out.println("action [82] { return (new Yytoken(yytext(),yyline,\"TKN_enquanto\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_enquanto"));
             }
             // fall through
           case 95: break;
           case 46:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [100] { return (new Yytoken(yytext(),yyline,\"TKN_nomeiaPrograma\")); }");
+            System.out.println("action [102] { return (new Yytoken(yytext(),yyline,\"TKN_nomeiaPrograma\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_nomeiaPrograma"));
             }
             // fall through
           case 96: break;
           case 47:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [107] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaVariavel\")); }");
+            System.out.println("action [72] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaVariavel\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel"));
             }
             // fall through
           case 97: break;
           case 48:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [101] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaConstante\")); }");
+            System.out.println("action [73] { return (new Yytoken(yytext(),yyline,\"TKN_iniciaConstante\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_iniciaConstante"));
             }
             // fall through
           case 98: break;
           case 49:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [75] { return (new Yytoken(yytext(),yyline,\"TKN_quociente\")); }");
+            System.out.println("action [77] { return (new Yytoken(yytext(),yyline,\"TKN_quociente\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_quociente"));
             }
             // fall through
           case 99: break;
           case 50:
             System.out.println("line: "+(yyline+1)+" "+"char: "+yychar+" "+"match: --"+zzToPrintable(yytext())+"--");
-            System.out.println("action [96] { return (new Yytoken(yytext(),yyline,\"TKN_declaraProcedimento\")); }");
+            System.out.println("action [98] { return (new Yytoken(yytext(),yyline,\"TKN_declaraProcedimento\")); }");
             { return (new Yytoken(yytext(),yyline,"TKN_declaraProcedimento"));
             }
             // fall through

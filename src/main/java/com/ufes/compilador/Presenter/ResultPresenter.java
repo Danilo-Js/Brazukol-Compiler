@@ -27,7 +27,7 @@ public class ResultPresenter {
             modelo.setNumRows(0);
 
             
-            for(tokenModel token: new tokenCollection().tokens) {
+            for(tokenModel token: new tokenCollection().tokensReverse) {
                 modelo.addRow(new Object[]{
                     token.line,
                     token.token,
@@ -44,7 +44,7 @@ public class ResultPresenter {
             DefaultTableModel modelo = (DefaultTableModel) this.view.getErrorsModel();
             modelo.setNumRows(0);
 
-            for(errorModel error: new errorCollection().errors) {
+            for(errorModel error: new errorCollection().errorsReverse) {
                 modelo.addRow(new Object[]{
                     error.line,
                     error.description,

@@ -1,1 +1,12 @@
-aa@
+programa
+
+variaval a : inteiro = 10; b = 5
+
+procedimento proc1(a: inteiro)
+Inicio
+
+Fim
+
+Inicio
+	proc1(a)
+Fim

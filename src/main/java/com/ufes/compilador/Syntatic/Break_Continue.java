@@ -1,8 +1,3 @@
-// linha -> tokenList[x].line 
-// valor -> tokenList[x].text 
-// token atribuído -> tokenList[x].token
-// achou o erro -> new Yyerror(linha, descrição do erro);
-
 package com.ufes.compilador.Syntatic;
 
 import com.ufes.compilador.JFlex.Yyerror;
@@ -16,47 +11,27 @@ import com.ufes.compilador.Model.tokenModel;
 public class Break_Continue {
     public tokenCollection tokenList;
 
-    public static final String token_for = "tk_for";
-    public static final String token_while = "tk_while";
-    public static final String token_break = "tk_break";
-    public static final String token_continue = "tk_continue";
+    public static final String token_for = "TKN_repita";
+    public static final String token_while = "TKN_enquanto";
+    public static final String token_break = "TKN_pare";
+    public static final String token_continue = "TKN_continua";
     
-    public boolean foundFor = false;
-    public boolean foundWhile = false;
+    public boolean canBreakOrContinue;
     
     public Break_Continue(tokenCollection tokenList) {
         this.tokenList = tokenList;
-        this.foundFor = false;
-        this.foundWhile = false;
+        this.canBreakOrContinue = false;
         this.verify();
     }
     
-    public void dealWithFor() {
-        this.foundFor = true;
-        this.foundWhile = false;
-    }
-    
-    public void dealWithWhile() {
-        this.foundFor = false;
-        this.foundWhile = true;
-    }
-    
-    public void dealWithPossibleError(int line) {
-        if (!foundFor && !foundWhile) {
-            new Yyerror(line, "Encontrado um break/continue for de um while/for");
-        }
-    }
-    
     public void verify() {
-        for(tokenModel tk : tokenList.tokens) {
-            if (tk.token == token_for) {
-                this.dealWithFor();
+        for(tokenModel tk : tokenList.tokensReverse) {
+            if (tk.token.equals(token_for) || tk.token.equals(token_while)) {
+                this.canBreakOrContinue = true;
             } else {
-                if (tk.token == token_while) {
-                    this.dealWithWhile();
-                } else {
-                    if (tk.token == token_break | tk.token == token_continue) {
-                        this.dealWithPossibleError(tk.line);
+                if (tk.token.equals(token_break) || tk.token.equals(token_continue)) {
+                    if (!this.canBreakOrContinue) {
+                        new Yyerror(tk.line, "Encontrado um pare/continua for de um enquanto/repita");
                     }
                 }
             }

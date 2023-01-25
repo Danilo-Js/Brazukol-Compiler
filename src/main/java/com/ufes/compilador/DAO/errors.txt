@@ -1,5 +1,0 @@
-
--- ERRO --
-Linha: 0
-Erro: Identificador não pode conter caracteres especiais
-.-- FIM ERRO --
