@@ -18,6 +18,15 @@
 
 %debug
 
+LineTerminator=\r|\n|\r\n
+WhiteSpace={LineTerminator} | [ \t\f]
+
+Comment={TraditionalComment} | {EndOfLineComment} | {DocumentationComment}
+TraditionalComment="/*" [^*] ~"*/" | "/*" "*"+ "/"
+EndOfLineComment="//"{InputCharacter}* {LineTerminator}?
+DocumentationComment="/**"{CommentContent} "*"+ "/"
+CommentContent=( [^*] | \*+ [^/*] )*
+
 ALPHA=[A-Za-z]
 DIGIT=[0-9]
 NONNEWLINE_WHITE_SPACE_CHAR=[\ \t\b\012]
@@ -43,8 +52,6 @@ tipo=inteiro|real|caracteres|caracter|booleano
   ")" { return (new Yytoken(yytext(),yyline,"TKN_fechaParenteses")); }
   "[" { return (new Yytoken(yytext(),yyline,"TKN_abreColchetes")); }
   "]" { return (new Yytoken(yytext(),yyline,"TKN_fechaColchetes")); }
-  "{" { return (new Yytoken(yytext(),yyline,"TKN_abreChaves")); }
-  "}" { return (new Yytoken(yytext(),yyline,"TKN_fechaChaves")); }
   "." { return (new Yytoken(yytext(),yyline,"TKN_ponto")); }
   "+" { return (new Yytoken(yytext(),yyline,"TKN_mais")); }
   "-" { return (new Yytoken(yytext(),yyline,"TKN_hifen")); }
@@ -59,6 +66,7 @@ tipo=inteiro|real|caracteres|caracter|booleano
   "&"  { return (new Yytoken(yytext(),yyline,"TKN_eComercial")); }
   "|"  { return (new Yytoken(yytext(),yyline,"TKN_barraVertical")); }
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
+  {WhiteSpace} { }
 }
 
 <YYINITIAL> \" { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
@@ -98,8 +106,14 @@ tipo=inteiro|real|caracteres|caracter|booleano
 <YYINITIAL> "variavel" { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
 
 <COMMENT> {
-  "/*" { comment_count++; }
-  "*/" { if (--comment_count == 0) yybegin(YYINITIAL); }
+  "{" { comment_count++; }
+  "}" { if (--comment_count == 0) yybegin(YYINITIAL); }
+  {COMMENT_TEXT} { }
+}
+
+<COMMENT> {
+  "(*" { comment_count++; }
+  "*)" { if (--comment_count == 0) yybegin(YYINITIAL); }
   {COMMENT_TEXT} { }
 }
 
