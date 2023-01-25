@@ -1,156 +1,24 @@
 
 -- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
-Linha: 11
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 10
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
+Texto: c
 Token: TKN_identificador
-Linha: 10
+Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 10
+Texto: constante
+Token: TKN_iniciaConstante
+Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: proc1
+Texto: c
 Token: TKN_identificador
-Linha: 10
+Linha: 0
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 9
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: proc1
-Token: TKN_identificador
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: procedimento
-Token: TKN_declaraProcedimento
-Linha: 4
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 5
-Token: TKN_tipoInteiro
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: b
-Token: TKN_identificador
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: ;
-Token: TKN_pontoEvirgula
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 10
-Token: TKN_tipoInteiro
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: variaval
-Token: TKN_identificador
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: programa
-Token: TKN_nomeiaPrograma
+Texto: variavel
+Token: TKN_iniciaVariavel
 Linha: 0
 .-- FIM TOKEN --

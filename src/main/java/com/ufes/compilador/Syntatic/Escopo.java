@@ -3,6 +3,7 @@ package com.ufes.compilador.Syntatic;
 import com.ufes.compilador.JFlex.Yyerror;
 import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
 public class Escopo {
     public tokenCollection tokenList;
     
-    public List<tokenModel> variaveis;
+    public List<String> variaveis;
 
     public static final String token_startVars = "TKN_iniciaVariavel";
     public static final String token_startConsts = "TKN_iniciaConstante";
@@ -27,26 +28,35 @@ public class Escopo {
     public Escopo(tokenCollection tokenList) {
         this.tokenList = tokenList;
         this.isCapturingVars = false;
+        this.variaveis = new ArrayList<String>();
         this.verify();
     }
     
-    public void checkVar(tokenModel variable) {
+    public void checkVar(String variable, int line) {
         if (variaveis.contains(variable)) {
-            new Yyerror(variable.line, "Variável/Constante sendo declarada mais de uma vez");
+            System.out.println("contém");
+            new Yyerror(line, "Variável/Constante " + variable + " sendo declarada mais de uma vez");
         } else {
+            System.out.println("nao contem: " + variable);
             variaveis.add(variable);
         }
+
     }
     
     public void verify() {
-        for(tokenModel tk : tokenList.tokens) {
+        for(tokenModel tk : tokenList.tokensReverse) {
             if (this.isCapturingVars) {
-                this.checkVar(tk);
+                System.out.println("capturando");
+                if (tk.token.equals("TKN_identificador")) {
+                    this.checkVar(tk.text, tk.line);
+                }
             }
             if (tk.token.equals(token_startVars) || tk.token.equals(token_startConsts)) {
                 this.isCapturingVars = true;
+                System.out.println("é pra capturar");
             } else if (tk.token.equals(token_inicio) || tk.token.equals(token_procedimento) || tk.token.equals(token_funcao)) {
                 this.isCapturingVars = false;
+                System.out.println("n eh pra capturar");
             }
         }
     }
