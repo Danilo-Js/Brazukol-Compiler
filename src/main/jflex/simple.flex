@@ -36,7 +36,7 @@ STRING_TEXT=(\\\"|[^\n\r\"\\]|\\{WHITE_SPACE_CHAR}+\\)*
 COMMENT_TEXT=([^*/\n]|[^*\n]"/"[^*\n]|[^/\n]"*"[^/\n]|"*"[^/\n]|"/"[^*\n])+
 Ident = {ALPHA}({ALPHA}|{DIGIT}|_)*
 
-ID=[_|a-z|A-Z][a-z|A-Z|0-9|_]*
+ID=[_|a-z|A-Z][a-z|A-Z|0-9|_|$|%|@|#|!|?]*
 INTEIRO=0|[1-9][0-9]*
 REAL={INTEIRO}.{INTEIRO}|{INTEIRO},{INTEIRO}
 

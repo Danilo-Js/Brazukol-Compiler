@@ -4,7 +4,23 @@ import com.ufes.compilador.DAO.tokenDAO;
 
 public class Yytoken {
   public Yytoken(String text, int line, String token) {
-    new tokenDAO(text, token, line);
+    if (token == "TKN_identificador") {
+        this.verifyID(text, line, token);
+    } else {
+        new tokenDAO(text, token, line);
+    }
+  }
+  
+  public void verifyID(String text, int line, String token) {
+      if (text.length() > 10) {
+          new Yyerror(line, "Identificador não pode ter mais do que 10 caracteres");
+      } else {
+        if (text.contains("$") || text.contains("%") || text.contains("@") || text.contains("#") || text.contains("!") || text.contains("?")) {
+            new Yyerror(line, "Identificador não pode conter caracteres especiais");
+        } else {
+            new tokenDAO(text, token, line);
+        }
+      }
   }
   
   public void printToken(String text, String token, int line) {

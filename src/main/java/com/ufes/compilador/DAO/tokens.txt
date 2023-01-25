@@ -1,6 +1,0 @@
-
--- TOKEN --
-Texto: aaaaa
-Token: TKN_identificador
-Linha: 0
-.-- FIM TOKEN --
