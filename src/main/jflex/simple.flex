@@ -61,6 +61,8 @@ tipo=inteiro|real|caracteres|caracter|booleano
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
 }
 
+<YYINITIAL> \" { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
+<YYINITIAL> \” { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
 <YYINITIAL> "quociente" { return (new Yytoken(yytext(),yyline,"TKN_quociente")); }
 <YYINITIAL> "resto" { return (new Yytoken(yytext(),yyline,"TKN_resto")); }
 <YYINITIAL> "se" { return (new Yytoken(yytext(),yyline,"TKN_se")); }

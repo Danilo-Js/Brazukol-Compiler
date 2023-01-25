@@ -1,21 +1,15 @@
-programa test
-Constante a : inteiro = 1; b = 10.5
-Variavel c = 1,  d = 10000, vetChar : vetor [1..5] de caracter
+Programa printaVetor
+Constante vet : vetor[1..1] de real
 
-Procedimento verifica (a :  inteiro)
+Funcao preencheVetor(v: vetor[1..1] de real)
 Inicio
-  se (a > 5) entao
-    escreva menorQueCinco
-Fim
-
-Funcao diminui (a :  inteiro)
-Inicio
-  se (a < 5) entao 
-    a = a -1 
-  senao 
-    verifica(a)
+     v[1]  := 1.1
+     v[2] := 2.2
+     v[3] := 3.1
 Fim
 
 Inicio
-  diminui(15)
+     escreva(v[1])
+     escreva(v[2])
+     escreva(v[3])
 Fim
