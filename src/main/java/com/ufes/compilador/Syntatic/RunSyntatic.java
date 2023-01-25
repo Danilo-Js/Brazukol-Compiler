@@ -2,10 +2,6 @@ package com.ufes.compilador.Syntatic;
 
 import com.ufes.compilador.Model.tokenCollection;
 
-/**
- *
- * @author Danilo-Js
- */
 public class RunSyntatic {
     
     public RunSyntatic() {

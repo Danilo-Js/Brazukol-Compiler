@@ -10,11 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang3.ArrayUtils;
 
-
-/**
- *
- * @author Danilo-Js
- */
 public class errorDAO {
     Path caminho;
 

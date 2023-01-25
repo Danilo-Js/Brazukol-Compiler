@@ -1,9 +1,5 @@
 package com.ufes.compilador.Model;
 
-/**
- *
- * @author Danilo-Js
- */
 public class errorModel {
     public int line;
     public String description;

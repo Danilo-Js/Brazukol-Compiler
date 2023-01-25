@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/** A small utility class. */
 public class Utility {
 
   private Utility() {}

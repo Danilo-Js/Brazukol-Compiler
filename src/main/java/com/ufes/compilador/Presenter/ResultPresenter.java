@@ -7,10 +7,6 @@ import com.ufes.compilador.Model.tokenModel;
 import com.ufes.compilador.View.ResultView;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author Danilo-Js
- */
 public class ResultPresenter {
     private ResultView view; 
 

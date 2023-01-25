@@ -1,9 +1,5 @@
 package com.ufes.compilador.Model;
 
-/**
- *
- * @author Danilo-Js
- */
 public class tokenModel {
     public String text;
     public String token;

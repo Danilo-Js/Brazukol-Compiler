@@ -4,10 +4,6 @@ import com.ufes.compilador.DAO.tokenDAO;
 import java.util.List;
 import java.util.Collections;
 
-/**
- *
- * @author Danilo-Js
- */
 public class tokenCollection {
     public List<tokenModel> tokens;
     public List<tokenModel> tokensReverse;

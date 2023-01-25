@@ -4,10 +4,6 @@ import com.ufes.compilador.JFlex.Yyerror;
 import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
 
-/**
- *
- * @author Danilo-Js
- */
 public class Break_Continue {
     public tokenCollection tokenList;
 

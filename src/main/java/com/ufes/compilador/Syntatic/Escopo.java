@@ -6,10 +6,6 @@ import com.ufes.compilador.Model.tokenModel;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Danilo-Js
- */
 public class Escopo {
     public tokenCollection tokenList;
     

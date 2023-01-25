@@ -1,6 +1,5 @@
 package com.ufes.compilador.DAO;
 
-import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
 import java.io.File;
 import java.io.PrintWriter;
@@ -11,10 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang3.ArrayUtils;
 
-/**
- *
- * @author Danilo-Js
- */
 public class tokenDAO {
     Path caminho;
     
