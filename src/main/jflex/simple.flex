@@ -19,12 +19,12 @@
 %debug
 
 LineTerminator=\r|\n|\r\n
+InputCharacter = [^\r\n]
 WhiteSpace={LineTerminator} | [ \t\f]
-
 Comment={TraditionalComment} | {EndOfLineComment} | {DocumentationComment}
-TraditionalComment="/*" [^*] ~"*/" | "/*" "*"+ "/"
+TraditionalComment="(*" [^*] ~"*)" | "(*" "*"+ ")"
 EndOfLineComment="//"{InputCharacter}* {LineTerminator}?
-DocumentationComment="/**"{CommentContent} "*"+ "/"
+DocumentationComment="{"{CommentContent} "}"
 CommentContent=( [^*] | \*+ [^/*] )*
 
 ALPHA=[A-Za-z]
@@ -67,6 +67,7 @@ tipo=inteiro|real|caracteres|caracter|booleano
   "|"  { return (new Yytoken(yytext(),yyline,"TKN_barraVertical")); }
   {NONNEWLINE_WHITE_SPACE_CHAR}+ { }
   {WhiteSpace} { }
+  {Comment} { }
 }
 
 <YYINITIAL> \" { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }

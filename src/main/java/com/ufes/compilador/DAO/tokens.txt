@@ -1,24 +1,6 @@
 
 -- TOKEN --
-Texto: c
-Token: TKN_identificador
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: c
-Token: TKN_identificador
-Linha: 0
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: b
-Token: TKN_identificador
-Linha: 0
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
+Texto: aaaaa
 Token: TKN_identificador
 Linha: 0
 .-- FIM TOKEN --
