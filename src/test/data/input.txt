@@ -1,11 +1,14 @@
-Programa ErroVetor
+Programa Diminui
 
-variavel a : vetor [1..3] de inteiro, b : vetor [1..5] de real
-constante c : vetor [1..3] de caracter, d : vetor[1..5000] de real
+Constante valorBase : inteiro = 5
+Variavel valorIni  : inteiro = 25
+
+Procedimento diminui (a :  inteiro)
+Inicio
+     se (a > valorBase) entao
+           a = a -1
+Fim
 
 Inicio
-a[4] // aponta erro de indice
-a[0] // aponta erro de indice
-a[2]
-d[25]
+     diminui(valorIni)
 Fim

@@ -23,6 +23,10 @@ public class vetorCollection {
         }
     }
     
+    /**
+     * retorna se o index acessado no vetor - seja uma variável ou constante -
+     * é válido
+     */
     public boolean verifyIndex(String nome, int indice) {
         boolean verify = false;
         for (vetorModel vetor : vetores) {
@@ -37,8 +41,14 @@ public class vetorCollection {
         return verify;
     }
     
+    /**
+     * preenche os vetores com os declarados em VARIAVEL ou CONSTANTE
+     */
     public void fillVetores() {
         
+        /*
+         variáveis auxiliares verificar se a sequencia de tokens representa um vetor
+        */
         boolean isDeclaringVariables = false;
         String name = "";
         boolean temDoisPontos = false;

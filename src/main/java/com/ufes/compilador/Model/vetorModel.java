@@ -10,8 +10,4 @@ public class vetorModel {
         this.startSize = startSize;
         this.maxSize = maxSize;
     }
-    
-    public void showVetor() {
-        System.out.println(this.name + " : ["+this.startSize+".."+this.maxSize+"];");
-    }
 }
