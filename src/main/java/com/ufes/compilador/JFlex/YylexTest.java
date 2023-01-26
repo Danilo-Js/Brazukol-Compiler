@@ -14,20 +14,26 @@ public class YylexTest {
         }
     }
     
-  public void output() throws Exception {
-    File inputFile = openFile("src/test/data/input.txt");
+    /*
+     pega o codigo salvo no arquivo e joga para analise lexica
+    */
+    public void output() throws Exception {
+      File inputFile = openFile("src/test/data/input.txt");
 
-    String[] argv = new String[] {inputFile.getPath()};
+      String[] argv = new String[] {inputFile.getPath()};
 
-    Yylex.main(argv);
-  }
-
-  private static File openFile(String pathName) throws IOException {
-    String path = pathName;
-    File file = new File(path);
-    if (!file.isFile()) {
-      throw new FileNotFoundException(path);
+      Yylex.main(argv);
     }
-    return file;
-  }
+
+    /*
+     funcao auxiliar para ler o arquivo
+    */
+    private static File openFile(String pathName) throws IOException {
+      String path = pathName;
+      File file = new File(path);
+      if (!file.isFile()) {
+        throw new FileNotFoundException(path);
+      }
+      return file;
+    }
 }

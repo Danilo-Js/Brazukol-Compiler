@@ -1,246 +1,48 @@
 
 -- TOKEN --
-Texto: Fim
+Texto: FIm
 Token: TKN_terminaBloco
-Linha: 13
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 12
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: valorIni
-Token: TKN_identificador
-Linha: 12
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 12
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: diminui
-Token: TKN_identificador
-Linha: 12
+Linha: 4
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Inicio
 Token: TKN_iniciaBloco
-Linha: 11
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
-Linha: 9
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 1
-Token: TKN_tipoInteiro
-Linha: 8
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: -
-Token: TKN_hifen
-Linha: 8
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 8
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 8
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 8
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: entao
-Token: TKN_entao
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: valorBase
-Token: TKN_identificador
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: >
-Token: TKN_maior
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: se
-Token: TKN_se
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 6
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: diminui
-Token: TKN_identificador
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Procedimento
-Token: TKN_declaraProcedimento
-Linha: 5
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 25
-Token: TKN_tipoInteiro
 Linha: 3
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: valorIni
-Token: TKN_identificador
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Variavel
-Token: TKN_iniciaVariavel
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 5
-Token: TKN_tipoInteiro
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 2
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: valorBase
+Texto: c
 Token: TKN_identificador
 Linha: 2
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Constante
+Texto: constante
 Token: TKN_iniciaConstante
 Linha: 2
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Diminui
+Texto: b
+Token: TKN_identificador
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: variavel
+Token: TKN_iniciaVariavel
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
 Token: TKN_identificador
 Linha: 0
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Programa
+Texto: programa
 Token: TKN_nomeiaPrograma
 Linha: 0
 .-- FIM TOKEN --

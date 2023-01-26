@@ -27,6 +27,9 @@ public class MainPresenter {
         this.view.setVisible(true);
     }
     
+    /*
+     joga todo o código no arquivo que será lido para a análise léxica
+    */
     public void setArquivoParaCompilar() {
         try{
             File file = new File(System.getProperty("user.dir") + "/src/test/data/input.txt");

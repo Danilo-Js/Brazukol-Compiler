@@ -11,14 +11,15 @@ public class Escopo {
     
     public List<String> variaveis;
 
+    /*
+     variáveis auxiliares para identificar quando se tá declarando variáveis
+     ou se tá num bloco/procedimento
+    */
     public static final String token_startVars = "TKN_iniciaVariavel";
     public static final String token_startConsts = "TKN_iniciaConstante";
-
     public static final String token_inicio = "TKN_iniciaBloco";
     public static final String token_procedimento = "TKN_declaraProcedimento";
     public static final String token_funcao = "TKN_declarafuncao";
-
-    
     public boolean isCapturingVars = false;
     
     public Escopo(tokenCollection tokenList) {
@@ -28,15 +29,21 @@ public class Escopo {
         this.verify();
     }
     
+    /*
+     checa se a variável já está na lista de variáveis/constantes, ou se é para adicioná-la
+     na lista
+    */
     public void checkVar(String variable, int line) {
         if (variaveis.contains(variable)) {
             new Yyerror(line, "Variável/Constante " + variable + " sendo declarada mais de uma vez");
         } else {
             variaveis.add(variable);
         }
-
     }
     
+    /*
+     identifica se está declarando variáveis/constantes ou se já chegou em um bloco
+    */
     public void verify() {
         for(tokenModel tk : tokenList.tokensReverse) {
             if (this.isCapturingVars) {

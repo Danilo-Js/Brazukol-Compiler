@@ -13,11 +13,17 @@ import org.apache.commons.lang3.ArrayUtils;
 public class tokenDAO {
     Path caminho;
     
+    /*
+     salvando um token direto ao instanciar a classe
+    */
     public tokenDAO(String text, String token, int line) {
         this.caminho = Paths.get(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/DAO/tokens.txt");
         this.salvarToken(text, token, line);
     }
 
+    /*
+     instanciando a classe
+    */
     public tokenDAO() {
         this.caminho = Paths.get(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/DAO/tokens.txt");
     }

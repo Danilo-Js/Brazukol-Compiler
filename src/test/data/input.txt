@@ -1,14 +1,5 @@
-Programa Diminui
-
-Constante valorBase : inteiro = 5
-Variavel valorIni  : inteiro = 25
-
-Procedimento diminui (a :  inteiro)
+programa a
+variavel b
+constante c
 Inicio
-     se (a > valorBase) entao
-           a = a -1
-Fim
-
-Inicio
-     diminui(valorIni)
-Fim
+FIm

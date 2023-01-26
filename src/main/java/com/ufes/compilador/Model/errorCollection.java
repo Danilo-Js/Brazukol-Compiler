@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class errorCollection {
-    public List<errorModel> errors;
-    public List<errorModel> errorsReverse;
+    public List<errorModel> errors; // erros começando do ultimo para o primeiro
+    public List<errorModel> errorsReverse; // erros começando do primeiro para o ultimo
 
     public errorCollection() {
         this.errors = new errorDAO().getErrors();

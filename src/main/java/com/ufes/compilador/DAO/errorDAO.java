@@ -13,15 +13,24 @@ import org.apache.commons.lang3.ArrayUtils;
 public class errorDAO {
     Path caminho;
 
+    /*
+     salvando um erro direto ao instanciar a classe
+    */
     public errorDAO(int line, String description) {
         this.caminho = Paths.get(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/DAO/errors.txt");
         this.salvarError(line, description);
     }
     
+    /*
+     instanciando a classe
+    */
     public errorDAO() {
         this.caminho = Paths.get(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/DAO/errors.txt");
     }
     
+    /*
+     salvo um erro no arquivo
+    */
     public void salvarError(int line, String description) {
         try{
             String textoEscrita = "\n-- ERRO --\n" + "Linha: " + line + "\n" + "Erro: " + description + "\n" + "." + "-- FIM ERRO --\n";
@@ -35,6 +44,9 @@ public class errorDAO {
         }
     }
     
+    /*
+     limpando o arquivo
+    */
     public void resetaArquivo() {
         try {
             File file = new File(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/DAO/errors.txt");

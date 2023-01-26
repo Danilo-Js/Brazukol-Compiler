@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Collections;
 
 public class tokenCollection {
-    public List<tokenModel> tokens;
-    public List<tokenModel> tokensReverse;
+    public List<tokenModel> tokens; // tokens começando do ultimo para o primeiro
+    public List<tokenModel> tokensReverse; // tokens começando do primeiro para o ultimo
     
     public tokenCollection() {
         this.tokens = new tokenDAO().getTokens();        

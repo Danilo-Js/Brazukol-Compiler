@@ -11,6 +11,9 @@ public class Yytoken {
     }
   }
   
+  /*
+   verifica se o identificador é grande demais ou se tem caracteres especiais
+  */
   public void verifyID(String text, int line, String token) {
       if (text.length() > 10) {
           new Yyerror(line, "Identificador não pode ter mais do que 10 caracteres");

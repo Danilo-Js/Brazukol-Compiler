@@ -7,6 +7,9 @@ import com.ufes.compilador.Model.tokenModel;
 public class Break_Continue {
     public tokenCollection tokenList;
 
+    /*
+     variáveis auxiliares para verificação
+    */
     public static final String token_for = "TKN_repita";
     public static final String token_while = "TKN_enquanto";
     public static final String token_break = "TKN_pare";
@@ -20,6 +23,9 @@ public class Break_Continue {
         this.verify();
     }
     
+    /*
+     faz a verificação se tem break/continua fora de um for/while
+    */
     public void verify() {
         for(tokenModel tk : tokenList.tokensReverse) {
             if (tk.token.equals(token_for) || tk.token.equals(token_while)) {
