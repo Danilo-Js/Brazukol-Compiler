@@ -17,6 +17,26 @@ public class vetorCollection {
         this.fillVetores();
     }
     
+    public void printaVetores() {
+        for (vetorModel vm : vetores) {
+            System.out.println(vm.name + "["+vm.startSize+".."+vm.maxSize+"]\n");
+        }
+    }
+    
+    public boolean verifyIndex(String nome, int indice) {
+        boolean verify = false;
+        for (vetorModel vetor : vetores) {
+            if (vetor.name.equals(nome)) {
+                if (indice > vetor.maxSize || indice < vetor.startSize) {
+                    verify = false;
+                } else if (indice <= vetor.maxSize && indice >= vetor.startSize) {
+                    verify = true;
+                }
+            }
+        }
+        return verify;
+    }
+    
     public void fillVetores() {
         
         boolean isDeclaringVariables = false;
@@ -32,38 +52,39 @@ public class vetorCollection {
             if (tk.token.equals("TKN_iniciaVariavel") || tk.token.equals("TKN_iniciaConstante")) {
                 isDeclaringVariables = true;
             }
-            if (isDeclaringVariables = true && tk.token.equals("TKN_identificador")) {
-                name = tk.text;
-            }
-            if (name.length() > 0 && tk.token.equals("TKN_doisPontos")) {
-                temDoisPontos = true;
-            }
-            if (temDoisPontos = true && tk.token.equals("TKN_declaraVetor")) {
-                declarouVetor = true;
-            }
-            if (declarouVetor = true && tk.token.equals("TKN_abreColchetes")) {
-                abriuColchetes = true;
-            }
-            if (abriuColchetes = true && tk.token.equals("TKN_tipoInteiro")) {
-                startSize = Integer.parseInt(tk.text);
-            }
-            if (!hasMaxSize && tk.token.equals("TKN_tipoInteiro")) {
-                maxSize = Integer.parseInt(tk.text);
-                hasMaxSize = true;
-            }
-            if (maxSize > -1 && tk.token.equals("TKN_fechaColchetes")) {
-                System.out.println("8");
-                vetores.add(new vetorModel(name,maxSize,startSize));
-                name = "";
-                temDoisPontos = false;
-                declarouVetor = false;
-                abriuColchetes = false;
-                startSize = -1;
-                maxSize = -1;
-                hasMaxSize = false;
-            }
             if (tk.token.equals(token_inicio) || tk.token.equals(token_procedimento) || tk.token.equals(token_funcao)) {
                 isDeclaringVariables = false;
+            }
+            if (isDeclaringVariables == true ) {
+                if (tk.token.equals("TKN_identificador")) {
+                    name = tk.text;
+                }
+                if (name.length() > 0 && tk.token.equals("TKN_doisPontos")) {
+                    temDoisPontos = true;
+                }
+                if (temDoisPontos = true && tk.token.equals("TKN_declaraVetor")) {
+                    declarouVetor = true;
+                }
+                if (declarouVetor = true && tk.token.equals("TKN_abreColchetes")) {
+                    abriuColchetes = true;
+                }
+                if (abriuColchetes = true && tk.token.equals("TKN_tipoInteiro")) {
+                    startSize = Integer.parseInt(tk.text);
+                }
+                if (!hasMaxSize && tk.token.equals("TKN_tipoInteiro")) {
+                    maxSize = Integer.parseInt(tk.text);
+                    hasMaxSize = true;
+                }
+                if (maxSize > -1 && tk.token.equals("TKN_fechaColchetes")) {
+                    vetores.add(new vetorModel(name,maxSize,startSize));
+                    name = "";
+                    temDoisPontos = false;
+                    declarouVetor = false;
+                    abriuColchetes = false;
+                    startSize = -1;
+                    maxSize = -1;
+                    hasMaxSize = false;
+                }
             }
         }
     }
