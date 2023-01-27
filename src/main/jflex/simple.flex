@@ -69,11 +69,15 @@ tipo=inteiro|real|caracteres|caracter|booleano
   {Comment} { }
 }
 
+<YYINITIAL> "verdadeiro" { return (new Yytoken(yytext(),yyline,"TKN_verdadeiro")); }
+<YYINITIAL> "falso" { return (new Yytoken(yytext(),yyline,"TKN_falso")); }
+
 <YYINITIAL> "variavel" { return (new Yytoken(yytext(),yyline,"TKN_iniciaVariavel")); }
 <YYINITIAL> "constante" { return (new Yytoken(yytext(),yyline,"TKN_iniciaConstante")); }
 
 <YYINITIAL> \" { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
 <YYINITIAL> \” { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
+<YYINITIAL> \“ { return (new Yytoken(yytext(),yyline,"TKN_aspas")); }
 <YYINITIAL> "quociente" { return (new Yytoken(yytext(),yyline,"TKN_quociente")); }
 <YYINITIAL> "resto" { return (new Yytoken(yytext(),yyline,"TKN_resto")); }
 <YYINITIAL> "se" { return (new Yytoken(yytext(),yyline,"TKN_se")); }

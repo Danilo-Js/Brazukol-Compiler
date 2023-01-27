@@ -1,5 +1,28 @@
-programa a
-variavel b
-constante c
+Programa testaInd
+variavel a : inteiro, b : real
+constante c : booleano, d : caracter, e : caracteres
+
+Funcao fillVet(a : caracter, b : inteiro, z : caracteres)
 Inicio
-FIm
+     a = “a”;
+     a = “aaa”; // aponta erro de tipo
+     b = 10;
+     b = 10.0; // aponta erro de tipo
+     z = “aaa”; 
+     z = 10; // aponta erro de tipo
+Fim
+
+Inicio
+a := 10;
+a := 11.1; // aponta erro de tipo
+b := 11.1;
+b := 10; // aponta erro de tipo
+c := verdadeiro;
+c := 5; // aponta erro de tipo
+d := “t”;
+d := “testee”; // aponta erro de tipo
+e := “teste”;
+e := “z”;
+e := 80; // aponta erro de tipo
+fillVet(“a”, 5, “aaa”)
+Fim

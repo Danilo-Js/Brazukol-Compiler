@@ -1,14 +1,806 @@
 
 -- TOKEN --
-Texto: FIm
+Texto: Fim
 Token: TKN_terminaBloco
-Linha: 4
+Linha: 27
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: aaa
+Token: TKN_identificador
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 5
+Token: TKN_tipoInteiro
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: fillVet
+Token: TKN_identificador
+Linha: 26
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 25
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 80
+Token: TKN_tipoInteiro
+Linha: 25
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 25
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 25
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: e
+Token: TKN_identificador
+Linha: 25
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: z
+Token: TKN_identificador
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: e
+Token: TKN_identificador
+Linha: 24
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: teste
+Token: TKN_identificador
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: e
+Token: TKN_identificador
+Linha: 23
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: testee
+Token: TKN_identificador
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: d
+Token: TKN_identificador
+Linha: 22
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: t
+Token: TKN_identificador
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: d
+Token: TKN_identificador
+Linha: 21
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 5
+Token: TKN_tipoInteiro
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: c
+Token: TKN_identificador
+Linha: 20
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: verdadeiro
+Token: TKN_verdadeiro
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: c
+Token: TKN_identificador
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10
+Token: TKN_tipoInteiro
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: b
+Token: TKN_identificador
+Linha: 18
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 11.1
+Token: TKN_tipoReal
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: b
+Token: TKN_identificador
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 11.1
+Token: TKN_tipoReal
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10
+Token: TKN_tipoInteiro
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 15
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Inicio
 Token: TKN_iniciaBloco
-Linha: 3
+Linha: 14
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 12
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 11
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10
+Token: TKN_tipoInteiro
+Linha: 11
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 11
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: z
+Token: TKN_identificador
+Linha: 11
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: aaa
+Token: TKN_identificador
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: z
+Token: TKN_identificador
+Linha: 10
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 9
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10.0
+Token: TKN_tipoReal
+Linha: 9
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 9
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: b
+Token: TKN_identificador
+Linha: 9
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 8
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: 10
+Token: TKN_tipoInteiro
+Linha: 8
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 8
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: b
+Token: TKN_identificador
+Linha: 8
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: aaa
+Token: TKN_identificador
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ”
+Token: TKN_aspas
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: “
+Token: TKN_aspas
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: =
+Token: TKN_igual
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 5
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: caracteres
+Token: TKN_tipoVariavel
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: z
+Token: TKN_identificador
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: inteiro
+Token: TKN_tipoVariavel
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: b
+Token: TKN_identificador
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: caracter
+Token: TKN_tipoVariavel
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
+Token: TKN_identificador
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: fillVet
+Token: TKN_identificador
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Funcao
+Token: TKN_declarafuncao
+Linha: 4
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: caracteres
+Token: TKN_tipoVariavel
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: e
+Token: TKN_identificador
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: caracter
+Token: TKN_tipoVariavel
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: d
+Token: TKN_identificador
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: booleano
+Token: TKN_tipoVariavel
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 2
 .-- FIM TOKEN --
 
 -- TOKEN --
@@ -24,7 +816,43 @@ Linha: 2
 .-- FIM TOKEN --
 
 -- TOKEN --
+Texto: real
+Token: TKN_tipoVariavel
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
 Texto: b
+Token: TKN_identificador
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ,
+Token: TKN_virgula
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: inteiro
+Token: TKN_tipoVariavel
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: :
+Token: TKN_doisPontos
+Linha: 1
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: a
 Token: TKN_identificador
 Linha: 1
 .-- FIM TOKEN --
@@ -36,13 +864,13 @@ Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: a
+Texto: testaInd
 Token: TKN_identificador
 Linha: 0
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: programa
+Texto: Programa
 Token: TKN_nomeiaPrograma
 Linha: 0
 .-- FIM TOKEN --
