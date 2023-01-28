@@ -1,7 +1,10 @@
 package com.ufes.compilador.DAO;
 
 import com.ufes.compilador.Model.errorModel;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -93,5 +96,41 @@ public class errorDAO {
         String descricao = s.substring(s.indexOf("Erro: "), s.indexOf("\n" + ".")).split("Erro: ")[1];
 
         return new errorModel(linha, descricao);
+    }
+    
+    /*
+     conta as linhas em branco e soma com as linha do erro
+    */
+    public int processaLinha(int linha) {
+        int linhaProcessada = 0;
+        File file1 = new File("src/test/data/input.txt");
+        if(!file1.exists()){  
+            System.exit(1);  
+        }  
+        BufferedReader in=null;
+        try {  
+            in = new BufferedReader(new FileReader(file1));  
+            
+            int contaLinhas = 0;
+            String line;
+            int contaLinhasEmBranco = 0;  
+            while((line = in.readLine())!=null && contaLinhas < linha)  
+            {
+                contaLinhas += 1;
+                if(line.trim().length()==0){
+                    linhaProcessada += 1;
+                }
+            }
+        
+        } catch (Exception e) {  
+            e.printStackTrace();  
+        }finally{
+            if(in!=null)try {
+                in.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+        return linhaProcessada + linha;
     }
 }
