@@ -183,6 +183,30 @@ public class ErroDeTipo {
     }
     
     /*
+     percorre os tokens e decide se as verificações serão feitas no bloco principal
+     ou numa função/procedimento
+    */
+    public void verify() {
+        for(tokenModel tk : tokenList.tokensReverse) {
+            if (tk.token.equals("TKN_declarafuncao") || tk.token.equals("TKN_declaraProcedimento")) {
+                this.estaEmProcedimento = true;
+            }
+            if (tk.token.equals("TKN_iniciaBloco")) {
+                if (this.estaEmProcedimento == true) {
+                    this.estaEmBlocoDeProcedimento = true;
+                    this.estaEmBloco = false;
+                }  else {
+                    this.estaEmBlocoDeProcedimento = false;
+                    this.estaEmBloco = true;
+                }
+            }
+            if (tk.token.equals("TKN_terminaBloco")) {
+                this.estaEmBlocoDeProcedimento = false;
+                this.estaEmProcedimento = false;
+                this.estaEmBloco = false;
+            }
+            if (this.estaEmBlocoDeProcedimento == true) {
+                this.p_verifyBloco(tk);
             }
             if (this.estaEmBloco == true) {
                 this.verifyBloco(tk);
