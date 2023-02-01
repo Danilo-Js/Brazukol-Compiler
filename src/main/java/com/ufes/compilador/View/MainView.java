@@ -23,19 +23,34 @@
  */
 package com.ufes.compilador.View;
 
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
+import javax.swing.AbstractAction;
+import javax.swing.KeyStroke;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.event.UndoableEditEvent;
+import javax.swing.event.UndoableEditListener;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.JTextComponent;
+import javax.swing.undo.CannotRedoException;
+import javax.swing.undo.CannotUndoException;
+import javax.swing.undo.UndoManager;
+
 /**
  *
  * @author meumacbook
  */
 public class MainView extends javax.swing.JFrame {
-
+    private ResultView resultView;
     /**
      * Creates new form MainView
      */
     public MainView() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -45,49 +60,100 @@ public class MainView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFrame1 = new javax.swing.JFrame();
+        jFrame2 = new javax.swing.JFrame();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         compileButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        label1 = new java.awt.Label();
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
+        jFrame2.getContentPane().setLayout(jFrame2Layout);
+        jFrame2Layout.setHorizontalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame2Layout.setVerticalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(java.awt.Color.gray);
         setMaximumSize(new java.awt.Dimension(789, 557));
         setMinimumSize(new java.awt.Dimension(789, 557));
         setPreferredSize(new java.awt.Dimension(789, 557));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        LineNumberingTextArea lineNumberingTextArea = new LineNumberingTextArea(jTextArea1);
+        jScrollPane1.setRowHeaderView(lineNumberingTextArea);
 
-        compileButton.setText("a");
+        jTextArea1.getDocument().addDocumentListener(new DocumentListener()
+            {
+                @Override
+                public void insertUpdate(DocumentEvent documentEvent)
+                {
+                    lineNumberingTextArea.updateLineNumbers();
+                }
 
-        jLabel1.setText("Compilar");
+                @Override
+                public void removeUpdate(DocumentEvent documentEvent)
+                {
+                    lineNumberingTextArea.updateLineNumbers();
+                }
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 754, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
+                @Override
+                public void changedUpdate(DocumentEvent documentEvent)
+                {
+                    lineNumberingTextArea.updateLineNumbers();
+                }
+            });
 
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
+            makeUndoable(jTextArea1);
+            jTextArea1.setColumns(20);
+            jTextArea1.setRows(5);
+            jScrollPane1.setViewportView(jTextArea1);
+
+            compileButton.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/Images/compile.png"));
+
+            label1.setAlignment(java.awt.Label.CENTER);
+            label1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+            label1.setText("Compilador Brazukol");
+
+            javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+            getContentPane().setLayout(layout);
+            layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, 589, Short.MAX_VALUE))
+                .addComponent(jScrollPane1)
+            );
+            layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(20, Short.MAX_VALUE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE))
+            );
+
+            pack();
+        }// </editor-fold>//GEN-END:initComponents
 
     /**
      * @param args the command line arguments
@@ -127,18 +193,69 @@ public class MainView extends javax.swing.JFrame {
         });
     }
     
+    public final static String UNDO_ACTION = "Undo";
+
+    public final static String REDO_ACTION = "Redo";
+
+    public static void makeUndoable(JTextComponent pTextComponent) {
+        final UndoManager undoMgr = new UndoManager();
+
+        // Add listener for undoable events
+        pTextComponent.getDocument().addUndoableEditListener(new UndoableEditListener() {
+            public void undoableEditHappened(UndoableEditEvent evt) {
+                undoMgr.addEdit(evt.getEdit());
+            }
+        });
+
+        // Add undo/redo actions
+        pTextComponent.getActionMap().put(UNDO_ACTION, new AbstractAction(UNDO_ACTION) {
+            public void actionPerformed(ActionEvent evt) {
+                try {
+                    if (undoMgr.canUndo()) {
+                        undoMgr.undo();
+                    }
+                } catch (CannotUndoException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        pTextComponent.getActionMap().put(REDO_ACTION, new AbstractAction(REDO_ACTION) {
+            public void actionPerformed(ActionEvent evt) {
+                try {
+                    if (undoMgr.canRedo()) {
+                        undoMgr.redo();
+                    }
+                } catch (CannotRedoException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        // Create keyboard accelerators for undo/redo actions (Ctrl+Z/Ctrl+Y)
+        pTextComponent.getInputMap().put(
+            KeyStroke.getKeyStroke(KeyEvent.VK_Z, InputEvent.CTRL_DOWN_MASK), UNDO_ACTION);
+        pTextComponent.getInputMap().put(
+            KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_DOWN_MASK), REDO_ACTION);
+    }
+    
     public String getTextToCompile() {
         return jTextArea1.getText();
     }
-    
+        
     public javax.swing.JButton getCompileButton() {
         return compileButton;
-    } 
+    }
+    
+    public javax.swing.JTextArea getJTextArea1() {
+        return jTextArea1;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton compileButton;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JFrame jFrame2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }

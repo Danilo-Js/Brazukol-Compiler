@@ -82,7 +82,7 @@ public class ResultView extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTableLexica = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(789, 557));
         setMinimumSize(new java.awt.Dimension(789, 557));
         setPreferredSize(new java.awt.Dimension(789, 557));
@@ -148,7 +148,7 @@ public class ResultView extends javax.swing.JFrame {
     public JTable getTabelaErrors() {
         return this.jTableResultado;
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
