@@ -1,6 +1,8 @@
 /* this is the scanner example from the JLex website
    (with small modifications to make it more readable) */
 
+package com.ufes.compilador.JFlex;
+
 %%
 
 %public

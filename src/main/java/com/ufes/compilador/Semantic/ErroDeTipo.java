@@ -1,13 +1,13 @@
-package com.ufes.compilador.Syntatic;
+package com.ufes.compilador.Semantic;
 
 import com.ufes.compilador.JFlex.Yyerror;
 import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
 import com.ufes.compilador.Model.variavelCollection;
 import com.ufes.compilador.Model.variavelModel;
-import static com.ufes.compilador.Syntatic.Escopo.token_funcao;
-import static com.ufes.compilador.Syntatic.Escopo.token_inicio;
-import static com.ufes.compilador.Syntatic.Escopo.token_procedimento;
+import static com.ufes.compilador.Semantic.Escopo.token_funcao;
+import static com.ufes.compilador.Semantic.Escopo.token_inicio;
+import static com.ufes.compilador.Semantic.Escopo.token_procedimento;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -171,7 +171,6 @@ public class ErroDeTipo {
             this.passouDoIgual = true;
         }
         if (this.passouDoIgual == true && this.pegaTipo(tk).length() > 0) {
-
             if(!this.variaveis.tipoCompativel(this.nome, this.pegaTipo(tk))) {
                 new Yyerror(tk.line, "Tipo " + this.pegaTipo(tk) + " incompatível associado a variável/constante " + this.nome);
             }

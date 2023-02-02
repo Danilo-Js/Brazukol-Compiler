@@ -1,11 +1,11 @@
-package com.ufes.compilador.Syntatic;
+package com.ufes.compilador.Semantic;
 
 import com.ufes.compilador.JFlex.Yyerror;
 import com.ufes.compilador.Model.tokenCollection;
 import com.ufes.compilador.Model.tokenModel;
 import com.ufes.compilador.Model.vetorCollection;
 import com.ufes.compilador.Model.vetorModel;
-import static com.ufes.compilador.Syntatic.Escopo.token_inicio;
+import static com.ufes.compilador.Semantic.Escopo.token_inicio;
 import java.util.ArrayList;
 import java.util.List;
 

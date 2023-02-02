@@ -69,11 +69,14 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="compileButton1" min="-2" pref="43" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="label1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="compileButton" min="-2" pref="43" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="label1" pref="589" max="32767" attributes="0"/>
           </Group>
-          <Component id="jScrollPane1" alignment="0" max="32767" attributes="0"/>
+          <Component id="jScrollPane1" alignment="0" pref="648" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -83,6 +86,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="compileButton" min="-2" pref="22" max="-2" attributes="0"/>
                   <Component id="label1" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="compileButton1" min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="479" max="-2" attributes="0"/>
@@ -124,6 +128,16 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Compilador Brazukol"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="compileButton1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.ImageIcon(System.getProperty(&quot;user.dir&quot;) + &quot;/src/main/java/com/ufes/compilador/Images/compile.png&quot;)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="compileButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

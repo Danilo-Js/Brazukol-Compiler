@@ -1,4 +1,4 @@
-package com.ufes.compilador.Syntatic;
+package com.ufes.compilador.Semantic;
 
 import com.ufes.compilador.JFlex.Yyerror;
 import com.ufes.compilador.Model.tokenCollection;

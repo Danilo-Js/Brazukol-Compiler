@@ -23,7 +23,6 @@
  */
 package com.ufes.compilador.View;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -33,23 +32,18 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
-import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.JTextComponent;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
 import javax.swing.undo.UndoManager;
 
-/**
- *
- * @author meumacbook
- */
 public class MainView extends javax.swing.JFrame {
-    private ResultView resultView;
     /**
      * Creates new form MainView
      */
     public MainView() {
         initComponents();
+        compileButton1.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/Images/upload.png"));
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -66,6 +60,7 @@ public class MainView extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         compileButton = new javax.swing.JButton();
         label1 = new java.awt.Label();
+        compileButton1 = new javax.swing.JButton();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -130,16 +125,26 @@ public class MainView extends javax.swing.JFrame {
             label1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
             label1.setText("Compilador Brazukol");
 
+            compileButton1.setIcon(new javax.swing.ImageIcon(System.getProperty("user.dir") + "/src/main/java/com/ufes/compilador/Images/compile.png"));
+            compileButton1.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    compileButton1ActionPerformed(evt);
+                }
+            });
+
             javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
             getContentPane().setLayout(layout);
             layout.setHorizontalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(compileButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, 589, Short.MAX_VALUE))
-                .addComponent(jScrollPane1)
+                    .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
             );
             layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,13 +152,18 @@ public class MainView extends javax.swing.JFrame {
                     .addContainerGap(20, Short.MAX_VALUE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(compileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(compileButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE))
             );
 
             pack();
         }// </editor-fold>//GEN-END:initComponents
+
+    private void compileButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compileButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_compileButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -246,12 +256,18 @@ public class MainView extends javax.swing.JFrame {
         return compileButton;
     }
     
+    public javax.swing.JButton getImportButton() {
+        return compileButton1;
+    }
+    
+    
     public javax.swing.JTextArea getJTextArea1() {
         return jTextArea1;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton compileButton;
+    private javax.swing.JButton compileButton1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame2;
     private javax.swing.JScrollPane jScrollPane1;

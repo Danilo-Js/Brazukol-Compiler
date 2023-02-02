@@ -1,10 +1,10 @@
-package com.ufes.compilador.Syntatic;
+package com.ufes.compilador.Semantic;
 
 import com.ufes.compilador.Model.tokenCollection;
 
-public class RunSyntatic {
+public class RunSemantic {
     
-    public RunSyntatic() {
+    public RunSemantic() {
         tokenCollection tokenList = new tokenCollection();
         new Escopo(tokenList);
         new ErroDeTipo(tokenList);

@@ -131,6 +131,6 @@ public class errorDAO {
                 ex.printStackTrace();
             }
         }
-        return linhaProcessada + linha;
+        return linhaProcessada + linha - 1;
     }
 }

@@ -1,8 +1,8 @@
 package com.ufes.compilador.Model;
 
-import static com.ufes.compilador.Syntatic.Escopo.token_funcao;
-import static com.ufes.compilador.Syntatic.Escopo.token_inicio;
-import static com.ufes.compilador.Syntatic.Escopo.token_procedimento;
+import static com.ufes.compilador.Semantic.Escopo.token_funcao;
+import static com.ufes.compilador.Semantic.Escopo.token_inicio;
+import static com.ufes.compilador.Semantic.Escopo.token_procedimento;
 import java.util.ArrayList;
 import java.util.List;
 

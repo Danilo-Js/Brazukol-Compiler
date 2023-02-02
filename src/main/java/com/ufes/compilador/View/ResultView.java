@@ -7,10 +7,6 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-/**
- *
- * @author Danilo-Js
- */
 public class ResultView extends javax.swing.JFrame {
 
     private DefaultTableModel tokensTableModel = new javax.swing.table.DefaultTableModel(
