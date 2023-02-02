@@ -260,7 +260,6 @@ public class MainView extends javax.swing.JFrame {
         return compileButton1;
     }
     
-    
     public javax.swing.JTextArea getJTextArea1() {
         return jTextArea1;
     }

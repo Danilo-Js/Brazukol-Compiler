@@ -1,18 +1,30 @@
+// Encontrar atribuições ou comparações a variáveis/constantes que não condizem com o seu tipo declarado
 Programa test1
-Constante vet : vetor[1..3] de real
+Variavel a : inteiro; b : real; c : booleano, d : caracter, e : caracteres;
 
-Funcao fillVet(v: vetor[1..3] de real)
+Funcao testaProc(a : caracter, b : inteiro, z : caracteres)
 Inicio
-     v[1] := 1.1;
-     v[2] := 2.2;
-     v[3] := 3.1;
-     v[4] := 9.0;
+     a = “a”;
+     a = “aaa”;
+     b = 10;
+     b = 10.0;
+     z = “aaa”; 
+     z = 10;
 Fim
 
 Inicio
-     fillVet(vet);
-     escreva(vet[1]);
-     escreva(vet[2]);
-     escreva(vet[3]);
-     escreva(vet[4]);
+a := 10;
+a := 11.1;
+b := 11.1;
+b := 10;
+c := verdadeiro;
+c := 5;
+d := “t”;
+d := “testee”;
+e := “teste”;
+e := “z”;
+e := 80;
+TestaProc(“a”, 5, “aaa”);
 Fim
+
+
