@@ -14,6 +14,14 @@ public class tokenCollection {
         Collections.reverse(tokensReverse);
     }
     
+    public tokenModel getFirstToken() {
+        return tokensReverse.get(0);
+    }
+    
+    public tokenModel getSecondToken() {
+        return tokensReverse.get(1);
+    }
+    
     public void printTokens() {
         for(tokenModel token: tokens) {
             token.printToken();

@@ -17,22 +17,10 @@ public class Nomeia_Programa {
      o segundo é um identificador
     */
     public void verify() {
-        boolean achouNomeiaPrograma = false;
-        boolean achouIdentificador = false;
-        for (tokenModel tk : tokenList.tokensReverse) {
-            if(tk.token.equals("TKN_nomeiaPrograma")) {
-                achouNomeiaPrograma = true;
-            }
-            if (!tk.token.equals("TKN_nomeiaPrograma") && achouNomeiaPrograma == true) {
-                if (!tk.token.equals("TKN_identificador")) {
-                    break;
-                } else {
-                    achouIdentificador = true;
-                }
-            }
-        }
-        if (achouNomeiaPrograma == false || achouIdentificador == false) {
-            new Yyerror(0, "Erro na nomeação do programa");
+        tokenModel firstToken = tokenList.getFirstToken();
+        tokenModel secondToken = tokenList.getSecondToken();
+        if (!(firstToken.token.equals("TKN_nomeiaPrograma") && secondToken.token.equals("TKN_identificador"))) {
+            new Yyerror(firstToken.line, "Erro na nomeação do programa");
         }
     }
 }

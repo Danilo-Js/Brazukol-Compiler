@@ -1,18 +1,18 @@
 
 -- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 3
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 2
+.-- FIM TOKEN --
+
+-- TOKEN --
 Texto: test2
 Token: TKN_identificador
 Linha: 1
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: test1
-Token: TKN_identificador
-Linha: 0
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Programa
-Token: TKN_nomeiaPrograma
-Linha: 0
 .-- FIM TOKEN --
