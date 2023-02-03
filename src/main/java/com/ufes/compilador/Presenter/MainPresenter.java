@@ -4,6 +4,7 @@ import com.ufes.compilador.DAO.errorDAO;
 import com.ufes.compilador.DAO.tokenDAO;
 import com.ufes.compilador.JFlex.YylexTest;
 import com.ufes.compilador.Semantic.RunSemantic;
+import com.ufes.compilador.Syntatic.RunSyntatic;
 import com.ufes.compilador.View.MainView;
 import java.io.BufferedReader;
 import java.io.File;
@@ -23,6 +24,7 @@ public class MainPresenter {
             new tokenDAO().resetaArquivo();
             this.setArquivoParaCompilar();
             new YylexTest();
+            new RunSyntatic();
             new RunSemantic();
             new ResultPresenter();
             this.view.makeErrorLinesRead();
