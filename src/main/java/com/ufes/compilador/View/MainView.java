@@ -23,15 +23,21 @@
  */
 package com.ufes.compilador.View;
 
+import com.ufes.compilador.DAO.errorDAO;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.util.List;
 import javax.swing.AbstractAction;
 import javax.swing.KeyStroke;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.UndoableEditEvent;
 import javax.swing.event.UndoableEditListener;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.DefaultHighlighter;
+import javax.swing.text.Highlighter;
 import javax.swing.text.JTextComponent;
 import javax.swing.undo.CannotRedoException;
 import javax.swing.undo.CannotUndoException;
@@ -246,6 +252,32 @@ public class MainView extends javax.swing.JFrame {
             KeyStroke.getKeyStroke(KeyEvent.VK_Z, InputEvent.CTRL_DOWN_MASK), UNDO_ACTION);
         pTextComponent.getInputMap().put(
             KeyStroke.getKeyStroke(KeyEvent.VK_Y, InputEvent.CTRL_DOWN_MASK), REDO_ACTION);
+    }
+    
+    public void updateLineNumbers() {
+        LineNumberingTextArea lineNumberingTextArea = new LineNumberingTextArea(jTextArea1);
+        jScrollPane1.setRowHeaderView(lineNumberingTextArea);
+        lineNumberingTextArea.updateLineNumbers();
+    }
+    
+    public void removeRedLines() {
+        Highlighter hilite = jTextArea1.getHighlighter();
+        hilite.removeAllHighlights();
+    }
+    
+    public void makeErrorLinesRead() {
+        this.removeRedLines();
+        List<Integer> errorLines = new errorDAO().getErrorLines();
+        for (int lineNumber : errorLines) {
+            try {
+                int startIndex = jTextArea1.getLineStartOffset(lineNumber);
+                int endIndex = jTextArea1.getLineEndOffset(lineNumber);
+                Highlighter.HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(Color.RED);
+                jTextArea1.getHighlighter().addHighlight(startIndex, endIndex, painter);
+            } catch(BadLocationException ble) {
+                System.out.println("Não foi possível pintar a linha " + lineNumber + " de vermelho: " + ble);
+            }
+        }
     }
     
     public String getTextToCompile() {

@@ -3,10 +3,10 @@ Programa test2
 
 Funcao Simula()
 Inicio
-   continua; // erro
+   continua;
 Fim
 
 Inicio
-   pare; //erro 
+   pare;
    Simula();
 Fim

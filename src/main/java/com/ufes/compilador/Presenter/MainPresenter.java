@@ -25,6 +25,7 @@ public class MainPresenter {
             new YylexTest();
             new RunSemantic();
             new ResultPresenter();
+            this.view.makeErrorLinesRead();
         });
 
         this.view.getImportButton().addActionListener((e) -> {
@@ -39,6 +40,8 @@ public class MainPresenter {
                 this.view.getJTextArea1().read(br, null);
                 br.close();
                 this.view.getJTextArea1().requestFocus();
+                this.view.updateLineNumbers();
+                this.view.removeRedLines();
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, ex);
             }

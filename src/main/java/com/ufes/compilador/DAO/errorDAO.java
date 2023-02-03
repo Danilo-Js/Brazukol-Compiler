@@ -83,7 +83,7 @@ public class errorDAO {
             } 
             
         } catch(Exception e) {
-            System.out.println("Erro ao ler tokens do arquivo: " + e);
+            System.out.println("Erro ao ler erros do arquivo: " + e);
         }
         return new ArrayList<errorModel>();
     }
@@ -96,6 +96,31 @@ public class errorDAO {
         String descricao = s.substring(s.indexOf("Erro: "), s.indexOf("\n" + ".")).split("Erro: ")[1];
 
         return new errorModel(linha, descricao);
+    }
+    
+    // returna uma lista com as linhas que possuem erro
+    public List<Integer> getErrorLines() {
+        List<Integer> lines = new ArrayList<Integer>();
+        try {
+            if (!Files.isReadable(caminho)) {
+                throw new RuntimeException("Não foi possível ler o arquivo");
+            }
+            String[] splitErrors = new String(Files.readAllBytes(caminho)).split("-- FIM ERRO --");
+            if (splitErrors.length > 0) {
+                for (int i = 0; i < splitErrors.length; i++) {
+                    try {
+                        String s = splitErrors[i].split("-- ERRO --\n")[1];
+                        int linha = Integer.parseInt(s.substring(s.indexOf("Linha: "), s.indexOf("\n" + "Erro: ")).split("Linha: ")[1]);
+                        lines.add(linha);
+                    } catch(Exception e) {
+                        System.out.println("Não foi possível converter o erro em uma instância: " + e);
+                    }
+                }
+            } 
+        } catch(Exception e) {
+            System.out.println("Erro ao ler linhas dos erros do arquivo do arquivo: " + e);
+        }
+        return lines;
     }
     
     /*

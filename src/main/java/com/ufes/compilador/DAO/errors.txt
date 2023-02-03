@@ -1,40 +1,10 @@
 
 -- ERRO --
-Linha: 25
-Erro: Tipo inteiro incompatível associado a variável/constante e
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 22
-Erro: Tipo caracteres incompatível associado a variável/constante d
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 20
-Erro: Tipo inteiro incompatível associado a variável/constante c
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 18
-Erro: Tipo inteiro incompatível associado a variável/constante b
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 16
-Erro: Tipo real incompatível associado a variável/constante a
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 11
-Erro: Tipo inteiro incompatível associado a variável/constante z
+Linha: 17
+Erro: Acessando um índice inexistente no vetor
 .-- FIM ERRO --
 
 -- ERRO --
 Linha: 9
-Erro: Tipo real incompatível associado a variável/constante b
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 7
-Erro: Tipo caracteres incompatível associado a variável/constante a
+Erro: Acessando um índice inexistente no vetor
 .-- FIM ERRO --
