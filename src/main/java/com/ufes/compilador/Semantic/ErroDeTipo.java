@@ -85,18 +85,19 @@ public class ErroDeTipo {
     public void p_verifyBloco(tokenModel tk) {
         if (tk.token.equals("TKN_identificador") && this.p_possuiVariavel(tk.text)) {
             this.p_nome = tk.text;
+            this.p_passouDoIgual = false;
         }
         if (this.p_nome.length() > 0 && tk.token.equals("TKN_igual")) {
             this.p_passouDoIgual = true;
         }
-        if (this.p_passouDoIgual == true && this.pegaTipo(tk).length() > 0) {
-            if(!this.p_tipoCompativel(this.p_nome, this.pegaTipo(tk))) {
-                new Yyerror(tk.line, "Tipo " + this.pegaTipo(tk) + " incompatível associado a variável/constante " + this.p_nome);
-            }
-        }
         if (tk.token.equals("TKN_pontoEvirgula")) {
             this.p_nome = "";
             this.p_passouDoIgual = false;
+        }
+        if (this.p_passouDoIgual == true && this.pegaTipo(tk).length() > 0 && !tk.token.equals("TKN_identificador") && !tk.token.equals("TKN_pontoEvirgula") && !tk.token.equals("TKN_igual") && !tk.token.equals("TKN_doisPontos")) {
+            if(!this.p_tipoCompativel(this.p_nome, this.pegaTipo(tk))) {
+                new Yyerror(tk.line, "Tipo " + this.pegaTipo(tk) + " do valor " + tk.text + " incompatível associado a variável/constante " + this.nome);
+            }
         }
     }
 
@@ -170,14 +171,14 @@ public class ErroDeTipo {
         if (this.nome.length() > 0 && tk.token.equals("TKN_igual")) {
             this.passouDoIgual = true;
         }
-        if (this.passouDoIgual == true && this.pegaTipo(tk).length() > 0) {
-            if(!this.variaveis.tipoCompativel(this.nome, this.pegaTipo(tk))) {
-                new Yyerror(tk.line, "Tipo " + this.pegaTipo(tk) + " incompatível associado a variável/constante " + this.nome);
-            }
-        }
         if (tk.token.equals("TKN_pontoEvirgula")) {
             this.nome = "";
             this.passouDoIgual = false;
+        }
+        if (this.passouDoIgual == true && this.pegaTipo(tk).length() > 0 && !tk.token.equals("TKN_identificador") &&  !tk.token.equals("TKN_pontoEvirgula") && !tk.token.equals("TKN_igual") && !tk.token.equals("TKN_doisPontos")) {
+            if(!this.variaveis.tipoCompativel(this.nome, this.pegaTipo(tk))) {
+                new Yyerror(tk.line, "Tipo " + this.pegaTipo(tk) + " do valor " + tk.text + " incompatível associado a variável/constante " + this.nome);
+            }
         }
     }
     

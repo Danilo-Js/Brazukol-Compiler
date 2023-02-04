@@ -23,6 +23,13 @@ public class variavelCollection {
     }
     
     /*
+     retorna o número de variáveis
+    */
+    public int getNumVariaveis() {
+        return this.variaveis.size();
+    }
+    
+    /*
      retorna o tipo de uma variável cujo nome
      foi passado como parâmetro
     */

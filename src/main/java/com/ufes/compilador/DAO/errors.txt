@@ -1,5 +1,10 @@
 
 -- ERRO --
-Linha: 1
-Erro: Erro na nomeação do programa
+Linha: 8
+Erro: Ponto e vírgula não encontrado
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 6
+Erro: Ponto e vírgula não encontrado
 .-- FIM ERRO --

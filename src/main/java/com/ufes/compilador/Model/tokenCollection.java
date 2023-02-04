@@ -14,6 +14,24 @@ public class tokenCollection {
         Collections.reverse(tokensReverse);
     }
     
+    public boolean getLinhaPossuiToken (int linha) {
+        boolean possui = false;
+        for (tokenModel i : tokensReverse) {
+            if (i.line == linha) {
+                possui = true;
+            }
+        }
+        return possui;
+    }
+    
+    public int getLinhas() {
+        int lines = 0;
+        for (tokenModel i : this.tokensReverse) {
+            lines = i.line;
+        }
+        return lines;
+    }
+    
     public tokenModel getFirstToken() {
         return tokensReverse.get(0);
     }
