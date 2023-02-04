@@ -7,6 +7,7 @@ public class RunSyntatic {
     public RunSyntatic() {
         tokenCollection tokenList = new tokenCollection();
         new Nomeia_Programa(tokenList);
+        new Sem_PontoVirgula(tokenList);
     }
     
 }
