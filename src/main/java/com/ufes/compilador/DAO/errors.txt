@@ -1,10 +1,10 @@
 
 -- ERRO --
-Linha: 8
-Erro: Ponto e vírgula não encontrado
+Linha: 13
+Erro: Bloco inicializado, mas não finalizado
 .-- FIM ERRO --
 
 -- ERRO --
-Linha: 6
-Erro: Ponto e vírgula não encontrado
+Linha: 11
+Erro: Bloco inicializado, mas não finalizado
 .-- FIM ERRO --

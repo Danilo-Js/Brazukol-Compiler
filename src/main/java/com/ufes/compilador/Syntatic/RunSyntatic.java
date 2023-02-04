@@ -8,6 +8,6 @@ public class RunSyntatic {
         tokenCollection tokenList = new tokenCollection();
         new Nomeia_Programa(tokenList);
         new Sem_PontoVirgula(tokenList);
+        new BlocoSemFim(tokenList);
     }
-    
 }

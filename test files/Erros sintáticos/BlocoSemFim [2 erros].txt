@@ -1,5 +1,4 @@
 // Encontrar blocos inicializados, mas não finalizados
-
 Programa test1
 Variavel a : inteiro;
 
