@@ -13,13 +13,3 @@ Erro: Não abriu parênteses
 Linha: 3
 Erro: Não fechou parênteses
 .-- FIM ERRO --
-
--- ERRO --
-Linha: 3
-Erro: Não abriu parênteses
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 3
-Erro: Identificador não encontrado
-.-- FIM ERRO --

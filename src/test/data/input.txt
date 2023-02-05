@@ -1,7 +1,7 @@
 // Verifica se os procedimentos/funções foram declarados corretamente
 Programa test1
 
-Procedimento
+Procedimento p1(
 Inicio
 Fim
 

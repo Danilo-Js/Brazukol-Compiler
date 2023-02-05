@@ -120,6 +120,18 @@ Linha: 4
 .-- FIM TOKEN --
 
 -- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 3
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: p1
+Token: TKN_identificador
+Linha: 3
+.-- FIM TOKEN --
+
+-- TOKEN --
 Texto: Procedimento
 Token: TKN_declaraProcedimento
 Linha: 3
