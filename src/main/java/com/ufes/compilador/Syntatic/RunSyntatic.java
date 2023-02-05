@@ -9,5 +9,6 @@ public class RunSyntatic {
         new Nomeia_Programa(tokenList);
         new Sem_PontoVirgula(tokenList);
         new BlocoSemFim(tokenList);
+        new VerificaProcedimento(tokenList);
     }
 }

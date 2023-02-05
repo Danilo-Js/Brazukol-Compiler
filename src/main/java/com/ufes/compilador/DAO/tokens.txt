@@ -1,156 +1,138 @@
 
 -- TOKEN --
-Texto: ;
-Token: TKN_pontoEvirgula
-Linha: 14
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: 10
-Token: TKN_tipoInteiro
-Linha: 14
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: =
-Token: TKN_igual
-Linha: 14
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 14
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 14
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 20
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Inicio
 Token: TKN_iniciaBloco
+Linha: 19
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
+Linha: 17
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 16
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: (
+Token: TKN_abreParenteses
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Procedimento
+Token: TKN_declaraProcedimento
+Linha: 15
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
 Linha: 13
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Inicio
 Token: TKN_iniciaBloco
-Linha: 11
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 10
+Linha: 12
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: )
 Token: TKN_fechaParenteses
-Linha: 10
+Linha: 11
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 10
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: p2
+Texto: p4
 Token: TKN_identificador
-Linha: 10
+Linha: 11
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Procedimento
 Token: TKN_declaraProcedimento
-Linha: 10
+Linha: 11
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Fim
 Token: TKN_terminaBloco
-Linha: 8
+Linha: 9
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Inicio
 Token: TKN_iniciaBloco
-Linha: 6
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 5
+Linha: 8
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: )
 Token: TKN_fechaParenteses
-Linha: 5
+Linha: 7
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: (
 Token: TKN_abreParenteses
-Linha: 5
+Linha: 7
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: p1
+Texto: p3
 Token: TKN_identificador
-Linha: 5
+Linha: 7
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Procedimento
 Token: TKN_declaraProcedimento
+Linha: 7
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: Fim
+Token: TKN_terminaBloco
 Linha: 5
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: ;
-Token: TKN_pontoEvirgula
-Linha: 3
+Texto: Inicio
+Token: TKN_iniciaBloco
+Linha: 4
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: inteiro
-Token: TKN_tipoVariavel
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: :
-Token: TKN_doisPontos
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: a
-Token: TKN_identificador
-Linha: 3
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Variavel
-Token: TKN_iniciaVariavel
+Texto: Procedimento
+Token: TKN_declaraProcedimento
 Linha: 3
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: test1
 Token: TKN_identificador
-Linha: 2
+Linha: 1
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: Programa
 Token: TKN_nomeiaPrograma
-Linha: 2
+Linha: 1
 .-- FIM TOKEN --

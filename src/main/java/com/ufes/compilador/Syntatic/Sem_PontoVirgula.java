@@ -18,7 +18,7 @@ public class Sem_PontoVirgula {
     public Sem_PontoVirgula(tokenCollection tokenList) {
         this.tokenList = tokenList;
         this.temPontoEVirgula = new ArrayList<Boolean>();
-        this.numLinhas = new tokenCollection().getLinhas();
+        this.numLinhas = this.tokenList.getLinhas();
         this.initialize_temPontoEVirgula();
         this.verify();
     }

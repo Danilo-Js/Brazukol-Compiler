@@ -1,10 +1,25 @@
 
 -- ERRO --
-Linha: 13
-Erro: Bloco inicializado, mas não finalizado
+Linha: 15
+Erro: Identificador não encontrado
 .-- FIM ERRO --
 
 -- ERRO --
 Linha: 11
-Erro: Bloco inicializado, mas não finalizado
+Erro: Não abriu parênteses
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 3
+Erro: Não fechou parênteses
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 3
+Erro: Não abriu parênteses
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 3
+Erro: Identificador não encontrado
 .-- FIM ERRO --
