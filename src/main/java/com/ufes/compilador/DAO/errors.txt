@@ -1,15 +1,10 @@
 
 -- ERRO --
-Linha: 15
-Erro: Identificador não encontrado
+Linha: 9
+Erro: Encontrado um pare/continua for de um enquanto/repita
 .-- FIM ERRO --
 
 -- ERRO --
-Linha: 11
-Erro: Não abriu parênteses
-.-- FIM ERRO --
-
--- ERRO --
-Linha: 3
-Erro: Não fechou parênteses
+Linha: 5
+Erro: Encontrado um pare/continua for de um enquanto/repita
 .-- FIM ERRO --

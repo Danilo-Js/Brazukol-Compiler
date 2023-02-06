@@ -1,21 +1,12 @@
-// Verifica se os procedimentos/funções foram declarados corretamente
-Programa test1
+// Encontrar um "pare" (break) ou "continua" (continue) sem um "para" (for) ou "while" (enquanto)
+Programa test2
 
-Procedimento p1(
+Funcao Simula()
 Inicio
-Fim
-
-Procedimento p3()
-Inicio
-Fim
-
-Procedimento p4)
-Inicio
-Fim
-
-Procedimento ()
-Inicio
+   continua;
 Fim
 
 Inicio
+   pare;
+   Simula();
 Fim

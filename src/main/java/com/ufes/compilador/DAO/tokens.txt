@@ -2,78 +2,42 @@
 -- TOKEN --
 Texto: Fim
 Token: TKN_terminaBloco
-Linha: 20
+Linha: 11
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 19
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
-Linha: 17
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 16
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 10
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: )
 Token: TKN_fechaParenteses
-Linha: 15
+Linha: 10
 .-- FIM TOKEN --
 
 -- TOKEN --
 Texto: (
 Token: TKN_abreParenteses
-Linha: 15
+Linha: 10
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Procedimento
-Token: TKN_declaraProcedimento
-Linha: 15
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
-Linha: 13
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Inicio
-Token: TKN_iniciaBloco
-Linha: 12
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 11
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: p4
+Texto: Simula
 Token: TKN_identificador
-Linha: 11
+Linha: 10
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Procedimento
-Token: TKN_declaraProcedimento
-Linha: 11
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 9
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Fim
-Token: TKN_terminaBloco
+Texto: pare
+Token: TKN_pare
 Linha: 9
 .-- FIM TOKEN --
 
@@ -84,32 +48,20 @@ Linha: 8
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: )
-Token: TKN_fechaParenteses
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: (
-Token: TKN_abreParenteses
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: p3
-Token: TKN_identificador
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
-Texto: Procedimento
-Token: TKN_declaraProcedimento
-Linha: 7
-.-- FIM TOKEN --
-
--- TOKEN --
 Texto: Fim
 Token: TKN_terminaBloco
+Linha: 6
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: ;
+Token: TKN_pontoEvirgula
+Linha: 5
+.-- FIM TOKEN --
+
+-- TOKEN --
+Texto: continua
+Token: TKN_continua
 Linha: 5
 .-- FIM TOKEN --
 
@@ -120,25 +72,31 @@ Linha: 4
 .-- FIM TOKEN --
 
 -- TOKEN --
+Texto: )
+Token: TKN_fechaParenteses
+Linha: 3
+.-- FIM TOKEN --
+
+-- TOKEN --
 Texto: (
 Token: TKN_abreParenteses
 Linha: 3
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: p1
+Texto: Simula
 Token: TKN_identificador
 Linha: 3
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: Procedimento
-Token: TKN_declaraProcedimento
+Texto: Funcao
+Token: TKN_declarafuncao
 Linha: 3
 .-- FIM TOKEN --
 
 -- TOKEN --
-Texto: test1
+Texto: test2
 Token: TKN_identificador
 Linha: 1
 .-- FIM TOKEN --

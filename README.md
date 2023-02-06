@@ -28,17 +28,19 @@
 
 </br>
 
-<p align="center">Página inicial</p>
 <p align="center">
-  <img alt="Web" width="600" height="300" src="https://github.com/Danilo-Js/Biblioteca-Virtual/blob/main/Protótipos/Home.png">
+  <img alt="Web" src="./assets/readmeGifs/usage.gif">
 </p>
 
 </br>
 
 ## :rocket: Sobre o projeto
-Este repositório faz parte de um trabalho acadêmico apresentado à disciplina de Engenharia de Requisitos de Software, ministrada pelo professor Bruno Vilela na Universidade Federal do Espírito Santo.
+Este repositório faz parte de um trabalho acadêmico apresentado à disciplina de Compiladores, ministrada pelo professor Rodrigo Freitas Silva na Universidade Federal do Espírito Santo.
 
-Esta biblioteca virtual faz parte de um sistema que tem como objetivo facilitar o acesso a livros para estudantes e amantes de leitura, além de apoiar aos escritores permitindo que lancem seus livros no sistema sem a intermediação de uma editora.
+Neste trabalho foi feita uma IDE simples para a linguagem brazukol, uma linguagem adaptada do portugol.
+
+### Análise léxica
+
 
 ## :information_source: Diretórios
 :file_folder: [Documentos](https://github.com/Danilo-Js/Biblioteca-Virtual/tree/main/Documentos)
