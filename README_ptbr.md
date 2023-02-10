@@ -80,4 +80,4 @@ Este projeto está com a licença MIT. [Clique aqui](https://github.com/Danilo-J
 
 ---
 
-#### Feito por Danilo José Lima de Oliveira, Fabrício Medeiros Tozo, Matheus da Silva Rocha, Isabela Coelho Fonseca.
+#### Feito por Danilo José Lima de Oliveira, Wesley Wernersbach Aranha, Bernardo Mangaraviti Carrerette, Maria Fernanda Mendes Moreira Mota e Matheus Eliziário Nardi.
