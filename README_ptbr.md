@@ -1,6 +1,6 @@
 <h4 align="center">
 
-  [Switch to english](README.md)
+  [Switch to english](https://github.com/Danilo-Js/Compilador-Brazukol)
 
 </h4>
 
