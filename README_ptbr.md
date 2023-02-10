@@ -1,23 +1,23 @@
 <h4 align="center">
 
-  [Switch to english](https://github.com/Danilo-Js/Compilador-Brazukol)
+  [Switch to english](https://github.com/Danilo-Js/Brazukol-Compiler)
 
 </h4>
 
 <p align="center">
-  <a href="https://img.shields.io/github/repo-size/Danilo-Js/Compilador-Brazukol/commits/master">
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Danilo-Js/Compilador-Brazukol">
+  <a href="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler/commits/master">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler">
   </a>
 
-  <a href="https://img.shields.io/github/issues/Danilo-Js/Compilador-Brazukol/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Danilo-Js/Compilador-Brazukol">
+  <a href="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler">
   </a>
   
-  <img alt="Repository forks" src="https://img.shields.io/github/forks/Danilo-Js/Compilador-Brazukol">
+  <img alt="Repository forks" src="https://img.shields.io/github/forks/Danilo-Js/Brazukol-Compiler">
   
-  <img alt="Repository stars" src="https://img.shields.io/github/stars/Danilo-Js/Compilador-Brazukol">
+  <img alt="Repository stars" src="https://img.shields.io/github/stars/Danilo-Js/Brazukol-Compiler">
   
-  <img alt="Repository license" src="https://img.shields.io/github/license/Danilo-Js/Compilador-Brazukol">
+  <img alt="Repository license" src="https://img.shields.io/github/license/Danilo-Js/Brazukol-Compiler">
   
 </p>
 
@@ -69,7 +69,7 @@ A criação dos tokens foram feitas com o uso do [JFlex](https://www.jflex.de/ma
 
 ```bash
 # Clone o repositório
-$ git clone https://github.com/Danilo-Js/Compilador-Brazukol.git
+$ git clone https://github.com/Danilo-Js/Brazukol-Compiler.git
 ```
 
 Você pode abrir o projeto no Netbeans, o importando como .zip, ou pode abrir o compilador através do [Brazukol.jar](Brazukol.jar)

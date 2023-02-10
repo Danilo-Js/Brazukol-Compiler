@@ -1,29 +1,34 @@
+<h4 align="center">
+
+  [Mudar para português](README_ptbr.md)
+
+</h4>
+
 <p align="center">
-  <a href="https://img.shields.io/github/repo-size/Danilo-Js/Compilador_Brazukol/commits/master">
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Danilo-Js/Compilador_Brazukol">
+  <a href="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler/commits/master">
+    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler">
   </a>
 
-  <a href="https://img.shields.io/github/issues/Danilo-Js/Compilador_Brazukol/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Danilo-Js/Compilador_Brazukol">
+  <a href="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler">
   </a>
   
-  <img alt="Repository forks" src="https://img.shields.io/github/forks/Danilo-Js/Compilador_Brazukol">
+  <img alt="Repository forks" src="https://img.shields.io/github/forks/Danilo-Js/Brazukol-Compiler">
   
-  <img alt="Repository stars" src="https://img.shields.io/github/stars/Danilo-Js/Compilador_Brazukol">
+  <img alt="Repository stars" src="https://img.shields.io/github/stars/Danilo-Js/Brazukol-Compiler">
   
-  <img alt="Repository license" src="https://img.shields.io/github/license/Danilo-Js/Compilador_Brazukol">
+  <img alt="Repository license" src="https://img.shields.io/github/license/Danilo-Js/Brazukol-Compiler">
   
 </p>
 
 <h1 align="center">
-   Compilador Brazukol :brazil:
+   Brazukol Compiler :brazil:
 </h1>
 
 <p align="center" direction="row">
-  <a href="#rocket-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-diretórios">Diretórios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#busts_in_silhouette-baixe-este-projeto">Baixe este projeto</a>
+  <a href="#rocket-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#busts_in_silhouette-get-this-project">Get this project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
 </p>
 
 </br>
@@ -34,37 +39,44 @@
 
 </br>
 
-## :rocket: Sobre o projeto
-Este repositório faz parte de um trabalho acadêmico apresentado à disciplina de Compiladores, ministrada pelo professor Rodrigo Freitas Silva na Universidade Federal do Espírito Santo.
+## :rocket: About the project
+This repository is part of an academic work presented to the Compilers discipline, of the Computer Science course, taught by Professor Rodrigo Freitas Silva at the Federal University of Espírito Santo.
 
-Neste trabalho foi feita uma IDE simples para a linguagem brazukol, uma linguagem adaptada do portugol.
+In this project, a simple IDE was made for the brazukol language, a language adapted from portugol.
 
-### Análise léxica
+### Lexical Analysis
+The creation of tokens was done using the [JFlex](https://www.jflex.de/manual.html).
 
+### Syntax Analisis
+[BlocoSemFim](src/main/java/com/ufes/compilador/Syntatic/BlocoSemFim.java) - Checks for any block that has not been closed
 
-## :information_source: Diretórios
-:file_folder: [Documentos](https://github.com/Danilo-Js/Biblioteca-Virtual/tree/main/Documentos)
-* [ATA da Reunião](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/main/Documentos/ATA%20da%20reuniao.pdf)
-* [Entrevista](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/main/Documentos/Entrevista.pdf)
-* [Documento principal](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/main/Documentos/Documento%20principal.pdf)
+[Nomeia_Programa](src/main/java/com/ufes/compilador/Syntatic/Nomeia_Programa.java) - Checks that the program was named correctly
 
-:black_joker: [Protótipos](https://github.com/Danilo-Js/Biblioteca-Virtual/tree/main/Protótipos)
+[Sem_PontoVirgula](src/main/java/com/ufes/compilador/Syntatic/Sem_PontoVirgula.java) - Checks for missing ";" on some line
 
-:page_with_curl: [Questionário](https://github.com/Danilo-Js/Biblioteca-Virtual/tree/main/Questionário)
+[VerificaProcedimento](src/main/java/com/ufes/compilador/Syntatic/VerificaProcedimento.java) - Checks if functions/procedures were declared correctly
 
-## :busts_in_silhouette: Baixe este projeto
+## Semantic Analysis
+[Break_Continue](src/main/java/com/ufes/compilador/Semantic/Break_Continue.java) - Checks for a "pare" (break) or "continua" (continue) without a "for" (pare) or "enquanto" (while)
+
+[Indice_Vetor](src/main/java/com/ufes/compilador/Semantic/Indice_Vetor.java) - Checks that it is not accessing any existing indexes in an array
+
+[ErroDeTipo](src/main/java/com/ufes/compilador/Semantic/ErroDeTipo.java) - Check that there are no type errors
+
+[Escopo](src/main/java/com/ufes/compilador/Semantic/Escopo.java) - Checks that no variable is being declared more than once
+
+## :busts_in_silhouette: Get this project
 
 ```bash
-# Clone o repositório
-$ git clone https://github.com/Danilo-Js/Biblioteca-Virtual.git
-# Baixe os arquivos atualizados
-$ git pull
+# Clone this repository
+$ git clone https://github.com/Danilo-Js/Brazukol-Compiler.git
 ```
 
+You can open the project in Netbeans, importing it as .zip, or you can open the compiler through [Brazukol.jar](Brazukol.jar)
 
-## :memo: Licença
-Este projeto está com a licença MIT. [Clique aqui](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/master/LICENSE) para vê-la.
+## :memo: License
 
+This project is [licensed by MIT](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/master/LICENSE).
 ---
 
-#### Feito por Danilo José Lima de Oliveira, Fabrício Medeiros Tozo, Matheus da Silva Rocha, Isabela Coelho Fonseca.
+#### Made by Danilo José Lima de Oliveira, Wesley Wernersbach Aranha, Bernardo Mangaraviti Carrerette, Maria Fernanda Mendes Moreira Mota and Matheus Eliziário Nardi.
