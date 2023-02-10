@@ -1,10 +1,30 @@
 
 -- ERRO --
-Linha: 9
-Erro: Encontrado um pare/continua for de um enquanto/repita
+Linha: 25
+Erro: Tipo inteiro do valor 80 incompatível associado a variável/constante e
 .-- FIM ERRO --
 
 -- ERRO --
-Linha: 5
-Erro: Encontrado um pare/continua for de um enquanto/repita
+Linha: 20
+Erro: Tipo inteiro do valor 5 incompatível associado a variável/constante c
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 18
+Erro: Tipo inteiro do valor 10 incompatível associado a variável/constante b
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 16
+Erro: Tipo real do valor 11.1 incompatível associado a variável/constante a
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 11
+Erro: Tipo inteiro do valor 10 incompatível associado a variável/constante 
+.-- FIM ERRO --
+
+-- ERRO --
+Linha: 9
+Erro: Tipo real do valor 10.0 incompatível associado a variável/constante 
 .-- FIM ERRO --
