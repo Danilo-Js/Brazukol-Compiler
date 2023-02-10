@@ -50,20 +50,20 @@ A criação dos tokens foram feitas com o uso do [JFlex](https://www.jflex.de/ma
 ### Análise sintática
 [BlocoSemFim](src/main/java/com/ufes/compilador/Syntatic/BlocoSemFim.java) - Verifica há algum bloco que não foi fechado 
 
-[Nomeia_Programa](src/main/java/com/ufes/compilador/Syntatic/Nomeia_Programa.java) - verifica se o programa foi nomeado corretamente
+[Nomeia_Programa](src/main/java/com/ufes/compilador/Syntatic/Nomeia_Programa.java) - Verifica se o programa foi nomeado corretamente
 
-[Sem_PontoVirgula](src/main/java/com/ufes/compilador/Syntatic/Sem_PontoVirgula.java) - verifica se faltou o ";" em alguma linha
+[Sem_PontoVirgula](src/main/java/com/ufes/compilador/Syntatic/Sem_PontoVirgula.java) - Verifica se faltou o ";" em alguma linha
 
-[VerificaProcedimento](src/main/java/com/ufes/compilador/Syntatic/VerificaProcedimento.java) - verifica se as funções/procedimentos foram declarados corretamente
+[VerificaProcedimento](src/main/java/com/ufes/compilador/Syntatic/VerificaProcedimento.java) - Verifica se as funções/procedimentos foram declarados corretamente
 
 ## Análise semântica
-[Break_Continue](src/main/java/com/ufes/compilador/Semantic/Break_Continue.java) - verifica se há um "pare" (break) ou "continua" (continue) sem um "para" (for) ou "while" (enquanto)
+[Break_Continue](src/main/java/com/ufes/compilador/Semantic/Break_Continue.java) - Verifica se há um "pare" (break) ou "continua" (continue) sem um "para" (for) ou "while" (enquanto)
 
-[Indice_Vetor](src/main/java/com/ufes/compilador/Semantic/Indice_Vetor.java) - verifica se não está acessando nenhum índice existente em um vetor
+[Indice_Vetor](src/main/java/com/ufes/compilador/Semantic/Indice_Vetor.java) - Verifica se não está acessando nenhum índice existente em um vetor
 
-[ErroDeTipo](src/main/java/com/ufes/compilador/Semantic/ErroDeTipo.java) - verifica se não há erros de tipagem
+[ErroDeTipo](src/main/java/com/ufes/compilador/Semantic/ErroDeTipo.java) - Verifica se não há erros de tipagem
 
-[Escopo](src/main/java/com/ufes/compilador/Semantic/Escopo.java) - verifica se não há nenhuma variável sendo declarada mais de uma vez
+[Escopo](src/main/java/com/ufes/compilador/Semantic/Escopo.java) - Verifica se não há nenhuma variável sendo declarada mais de uma vez
 
 ## :busts_in_silhouette: Baixe este projeto
 
