@@ -75,7 +75,7 @@ $ git clone https://github.com/Danilo-Js/Brazukol-Compiler.git
 You can open the project in Netbeans, importing it as .zip, or you can open the compiler through [Brazukol.jar](Brazukol.jar)
 
 ## :memo: License
-This project is [licensed by MIT](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/master/LICENSE).
+This project is [licensed by MIT](https://github.com/Danilo-Js/Brazukol-Compiler/blob/master/LICENSE).
 
 ---
 
