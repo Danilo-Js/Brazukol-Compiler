@@ -76,6 +76,7 @@ You can open the project in Netbeans, importing it as .zip, or you can open the 
 
 ## :memo: License
 This project is [licensed by MIT](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/master/LICENSE).
+
 ---
 
 #### Made by Danilo José Lima de Oliveira, Wesley Wernersbach Aranha, Bernardo Mangaraviti Carrerette, Maria Fernanda Mendes Moreira Mota and Matheus Eliziário Nardi.
