@@ -76,7 +76,7 @@ Você pode abrir o projeto no Netbeans, o importando como .zip, ou pode abrir o 
 
 
 ## :memo: Licença
-Este projeto está com a licença MIT. [Clique aqui](https://github.com/Danilo-Js/Biblioteca-Virtual/blob/master/LICENSE) para vê-la.
+Este projeto está com a licença MIT. [Clique aqui](https://github.com/Danilo-Js/Brazukol-Compiler/blob/master/LICENSE) para vê-la.
 
 ---
 
