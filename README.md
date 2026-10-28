@@ -1,82 +1,51 @@
-<h4 align="center">
+![Brazukol Compiler](docs/assets/capa.svg)
 
-  [Mudar para português](README_ptbr.md)
+# Brazukol Compiler
 
-</h4>
+Trabalho de Compiladores com uma IDE simples para Brazukol, uma linguagem didática adaptada de Portugol. O projeto permite observar a transformação de texto em tokens e a identificação de erros sintáticos e semânticos.
 
-<p align="center">
-  <a href="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler/commits/master">
-    <img alt="Repository size" src="https://img.shields.io/github/repo-size/Danilo-Js/Brazukol-Compiler">
-  </a>
+**Compiladores · Ciência da Computação · UFES**
 
-  <a href="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Danilo-Js/Brazukol-Compiler">
-  </a>
-  
-  <img alt="Repository forks" src="https://img.shields.io/github/forks/Danilo-Js/Brazukol-Compiler">
-  
-  <img alt="Repository stars" src="https://img.shields.io/github/stars/Danilo-Js/Brazukol-Compiler">
-  
-  <img alt="Repository license" src="https://img.shields.io/github/license/Danilo-Js/Brazukol-Compiler">
-  
-</p>
+Java 8 · Swing · JFlex · Maven
 
-<h1 align="center">
-   Brazukol Compiler :brazil:
-</h1>
+[English](README.en.md) · [Meu percurso em Ciência da Computação](https://github.com/Danilo-Js/My-Computer-Science-Course)
 
-<p align="center" direction="row">
-  <a href="#rocket-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#busts_in_silhouette-get-this-project">Get this project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">License</a>
-</p>
+<p align="center"><img src="assets/readmeGifs/usage.gif" alt="Demonstração original de Brazukol Compiler" width="780" /></p>
 
-</br>
+## O que este projeto explora
 
-<p align="center">
-  <img alt="Web" src="./assets/readmeGifs/usage.gif">
-</p>
+- Análise léxica e representação de tokens com JFlex.
+- Verificações de blocos, procedimentos e terminadores de instrução.
+- Checagens de tipo, escopo e uso de break/continue no subconjunto implementado.
 
-</br>
+## Como explorar
 
-## :rocket: About the project
-This repository is part of an academic work presented to the Compilers discipline, of the Computer Science course, taught by Professor Rodrigo Freitas Silva at the Federal University of Espírito Santo.
+| Caminho | Conteúdo |
+|---|---|
+| [Análise léxica](src/main/java/com/ufes/compilador/JFlex) | `src/main/java/com/ufes/compilador/JFlex` |
+| [Verificações sintáticas](src/main/java/com/ufes/compilador/Syntatic) | `src/main/java/com/ufes/compilador/Syntatic` |
+| [Verificações semânticas](src/main/java/com/ufes/compilador/Semantic) | `src/main/java/com/ufes/compilador/Semantic` |
+| [Interface](src/main/java/com/ufes/compilador/View) | `src/main/java/com/ufes/compilador/View` |
+| [Entradas de exemplo](test%20files) | `test files` |
 
-In this project, a simple IDE was made for the brazukol language, a language adapted from portugol.
+## Executar ou consultar
 
-### Lexical Analysis
-The creation of tokens was done using the [JFlex](https://www.jflex.de/manual.html).
-
-### Syntax Analisis
-[BlocoSemFim](src/main/java/com/ufes/compilador/Syntatic/BlocoSemFim.java) - Checks for any block that has not been closed
-
-[Nomeia_Programa](src/main/java/com/ufes/compilador/Syntatic/Nomeia_Programa.java) - Checks that the program was named correctly
-
-[Sem_PontoVirgula](src/main/java/com/ufes/compilador/Syntatic/Sem_PontoVirgula.java) - Checks for missing ";" on some line
-
-[VerificaProcedimento](src/main/java/com/ufes/compilador/Syntatic/VerificaProcedimento.java) - Checks if functions/procedures were declared correctly
-
-## Semantic Analysis
-[Break_Continue](src/main/java/com/ufes/compilador/Semantic/Break_Continue.java) - Checks for a "pare" (break) or "continua" (continue) without a "for" (pare) or "enquanto" (while)
-
-[Indice_Vetor](src/main/java/com/ufes/compilador/Semantic/Indice_Vetor.java) - Checks that it is not accessing any existing indexes in an array
-
-[ErroDeTipo](src/main/java/com/ufes/compilador/Semantic/ErroDeTipo.java) - Check that there are no type errors
-
-[Escopo](src/main/java/com/ufes/compilador/Semantic/Escopo.java) - Checks that no variable is being declared more than once
-
-## :busts_in_silhouette: Get this project
+O [pom.xml](pom.xml) configura Java 8. É possível importar o projeto Maven no NetBeans ou usar o artefato didático existente:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/Danilo-Js/Brazukol-Compiler.git
+java -jar Brazukol.jar
 ```
 
-You can open the project in Netbeans, importing it as .zip, or you can open the compiler through [Brazukol.jar](Brazukol.jar)
+Para estudar a construção, use Maven com JDK compatível (`mvn package`) e confira as classes de entrada em `com.ufes.compilador.App.Main`. O JAR histórico e a árvore de fontes devem ser comparados quando forem feitas mudanças funcionais.
 
-## :memo: License
-This project is [licensed by MIT](https://github.com/Danilo-Js/Brazukol-Compiler/blob/master/LICENSE).
+## Conceitos e contexto
 
----
+É uma implementação didática com verificações específicas. Não representa suporte completo a Portugol nem um compilador de uso geral.
 
-#### Made by Danilo José Lima de Oliveira, Wesley Wernersbach Aranha, Bernardo Mangaraviti Carrerette, Maria Fernanda Mendes Moreira Mota and Matheus Eliziário Nardi.
+## Autoria e procedência
+
+Danilo José Lima de Oliveira, Wesley Wernersbach Aranha, Bernardo Mangaraviti Carrerette, Maria Fernanda Mendes Moreira Mota e Matheus Eliziário Nardi. Trabalho da disciplina ministrada por Rodrigo Freitas Silva.
+
+## Licença
+
+Os termos deste acervo estão em [LICENSE](LICENSE). Os projetos e materiais vinculados conservam suas próprias condições e atribuições.
